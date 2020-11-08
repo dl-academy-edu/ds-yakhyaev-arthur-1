@@ -25,7 +25,9 @@
         </div>
     </header>
     
-    <section class="contact">
+  <section class="contact">
+   
+    <div class="container">
        
         <h1 class="contact__title">Contact Us</h1>
         <div class="contact__select">
@@ -33,48 +35,34 @@
             <p class="contact__btn"><a href="">Contact us</a></p>
         </div>
         
-        <div class="container">
-           
-            <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
-               
-                <p class="contact__name">
-                 <label for="name-input">Name</label>
-                 <input id="name-input" type="text" placeholder="Ivan Ivanov">
-                </p>
-                
-                <p class="contact__phone">
+        <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="contact__name">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+            <div class="contact__phone">
                 <label for="phone-input">Phone</label>
-                 <input id="phone-input" type="text" placeholder="">
-                </p>
-                
-                <p class="contact__email">
+                <input id="phone-input" type="text"> </div>
+            <div class="contact__email">
                 <label for="email-input">E-mail</label>
-                 <input id="email-input" type="email" placeholder="">
-                </p>
-                
-                     
-                <p class="contact__massage">    
+                <input id="email-input" type="email"> </div>
+            <div class="contact__massage">
                 <label for="textarea">Massage</label>
                 <textarea id="textarea"> Massage </textarea>
-                </p>
-                 
-                <p class="contact__consent">
+            </div>
+            <div class="contact__consent">
                 <input id="check-consent" type="checkbox">
                 <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
-                </p>   
-
-                <button class="contact__button" type="submit"><a href="">Submit</a></button>
-
-             
-                
-            </form>
-            
-            <p class="contact__text" > Our support team are on-hand to assist with any issues you are experiencing. </p>
+            </div>
+            <button class="contact__button" type="submit">Submit</button>
+        </form>
+        
+        <div class="contact__descript">
+            <p class="contact__text"> Our support team are on-hand to assist with any issues you are experiencing. </p>
             <p class="contact__text"> Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
             <p class="contact__subtext"> An expert is waiting to help you! </p>
-            
         </div>
-    </section>
+    </div>
+</section>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">

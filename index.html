@@ -10,11 +10,9 @@
 <body>
     <header class="header">
         <div class="container">
-           <div class="header__wrapper">
-            <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
-               
+            <div class="header__wrapper">
+                <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
-                   
                     <ul class="header__nav-list">
                         <li class="header__nav-link"><a href="">Blog</a></li>
                         <li class="header__nav-link"><a href="catalog.html">Catalog</a></li>
@@ -32,19 +30,15 @@
                 <div class="intro__wrapper">
                     <div class="intro__wrap"> <span class="intro__number">01</span>
                         <ul class="intro__list">
-                           
                             <li class="intro__link">
                                 <button class="intro__btn"><a href="">1</a></button>
                             </li>
-                            
                             <li class="intro__link">
                                 <button class="intro__btn"><a href="">2</a></button>
                             </li>
-                            
                             <li class="intro__link">
                                 <button class="intro__btn"><a href="">3</a></button>
                             </li>
-                            
                             <li class="intro__link">
                                 <button class="intro__btn"><a href="">4</a></button>
                             </li>
@@ -177,47 +171,37 @@
             </div>
         </div>
     </footer>
-    
     <section class="popup" id="popup1">
-    
-    <div class="modal__close">
-        <button type="button">&times;</button>
-    </div>
        
-        <p  class="popup__name">
-        <label for="name-input">Name</label>
-        <input id="name-input" type="text" placeholder="Ivan Ivanov">
-        </p>
+            <button type="button">&times;</button>
+            
+        <form class="popup__form" action="" method="post">
+           
+            <div class="popup__name">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+            <div class="popup__phone">
+                <label for="phone-input">Phone</label>
+                <input id="phone-input" type="text" > </div>
+            <div class="popup__email">
+                <label for="email-input">E-mail</label>
+                <input id="email-input" type="email" > </div>
+            <div class="popup__massage">
+                <label for="textarea">Massage</label>
+                <textarea id="textarea"> Massage </textarea>
+            </div>
+            <div class="popup__consent">
+                <input id="check-consent" type="checkbox">
+                <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
+            </div>
+            
+            <button class="popup__button" type="button">Submit</button>
         
-        <p class="popup__phone">
-        <label for="phone-input">Phone</label>
-        <input id="phone-input" type="text" placeholder="">
-        </p>
-        
-        <p class="popup__email">
-        <label for="email-input">E-mail</label>
-        <input id="email-input" type="email" placeholder="">
-        </p>
-        
-        <p class="popup__massage">
-        <label for="textarea">Massage</label>
-        <textarea id="textarea"> Massage </textarea>
-        </p>
-        
-        <p class="popup__consent">
-        <input id="check-consent" type="checkbox">
-        <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
-        </p>
-        
-        <button class="popup__button" type="button">Submit</button>
-    
-</section>
+        </form>
+    </section>
 </body>
 
 </html>
-
-
-
 
 
 
