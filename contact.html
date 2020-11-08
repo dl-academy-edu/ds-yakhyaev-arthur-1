@@ -10,8 +10,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__wrapper">
-                <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
+           <div class="header__wrapper">
+            <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-link"><a href="">Blog</a></li>
@@ -24,37 +24,45 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="services">
-            <div class="container">
-                <h1 class="services__title">Category Products</h1>
-                <div class="services__select">
-                    <p class="services__btn"><a href="">Home</a></p>
-                    <p class="services__btn"><a href="">Catalog</a></p>
-                </div>
-                <ul class="services__list">
-                    <li class="services__block"> <img src="images/service1.png" alt="service-1" width="244" height="177">
-                        <h3 class="services__sub">Apparel Kids</h3> </li>
-                    <li class="services__block"> <img src="images/service2.png" alt="service-2" width="208" height="244">
-                        <h3 class="services__sub">Holiday Shop</h3> </li>
-                    <li class="services__block"> <img src="images/service3.png" alt="service-3" width="270" height="270">
-                        <h3 class="services__sub">Toys</h3> </li>
-                    <li class="services__block"> <img src="images/service4.png" alt="service-4" width="240" height="250">
-                        <h3 class="services__sub">Accessories</h3> </li>
-                    <li class="services__block"> <img src="images/service5.png" alt="service-5" width="240" height="250">
-                        <h3 class="services__sub">Sale</h3> </li>
-                    <li class="services__block"> <img src="images/service6.png" alt="service-6" width="240" height="250">
-                        <h3 class="services__sub">Apparel Adult</h3> </li>
-                </ul>
+    
+  <section class="contact">
+   
+    <div class="container">
+       
+        <h1 class="contact__title">Contact Us</h1>
+        <div class="contact__select">
+            <p class="contact__btn"><a href="">Home</a></p>
+            <p class="contact__btn"><a href="">Contact us</a></p>
+        </div>
+        
+        <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="contact__name">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+            <div class="contact__phone">
+                <label for="phone-input">Phone</label>
+                <input id="phone-input" type="text"> </div>
+            <div class="contact__email">
+                <label for="email-input">E-mail</label>
+                <input id="email-input" type="email"> </div>
+            <div class="contact__massage">
+                <label for="textarea">Massage</label>
+                <textarea id="textarea"> Massage </textarea>
             </div>
-            <div class="services__descript">
-                <h2 class="services__title">Product Description</h2>
-                <p class="services__subtext"> Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister. </p>
-                <p class="services__subtext"> A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old. </p>
-                <p class="services__subtext"> The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress. </p>
+            <div class="contact__consent">
+                <input id="check-consent" type="checkbox">
+                <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
             </div>
-        </section>
-    </main>
+            <button class="contact__button" type="submit">Submit</button>
+        </form>
+        
+        <div class="contact__descript">
+            <p class="contact__text"> Our support team are on-hand to assist with any issues you are experiencing. </p>
+            <p class="contact__text"> Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
+            <p class="contact__subtext"> An expert is waiting to help you! </p>
+        </div>
+    </div>
+</section>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
