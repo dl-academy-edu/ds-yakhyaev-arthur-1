@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
 
 <body>
     <header class="header">
@@ -178,24 +179,30 @@
     <section class="popup" id="popup1">
         <button type="button">&times;</button>
         <form class="popup__form" action="" method="post">
+           <div class="popup__wrapper">
             <div class="popup__name">
                 <label for="name-input">Name</label>
-                <input id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+                <input class="popup__form-name" id="name-input" type="text" ></div>
+                
+                <div class="popup__form-wrap">
             <div class="popup__phone">
                 <label for="phone-input">Phone</label>
-                <input id="phone-input" type="text"> </div>
+                <input class="popup__phone-email" id="phone-input" type="text"> </div>
             <div class="popup__email">
                 <label for="email-input">E-mail</label>
-                <input id="email-input" type="email"> </div>
+                <input class="popup__phone-email" id="email-input" type="email"> </div>
+                </div>
+                
             <div class="popup__massage">
                 <label for="textarea">Massage</label>
-                <textarea id="textarea"> Massage </textarea>
+                <textarea class="popup__textarea"  id="textarea"> Massage </textarea>
             </div>
             <div class="popup__consent">
                 <input id="check-consent" type="checkbox">
-                <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
+                <label class="popup__text" for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
             </div>
             <button class="popup__button" type="button">Submit</button>
+            </div>
         </form>
     </section>
 </body>

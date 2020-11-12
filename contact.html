@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"href="css/contact.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    
+ </head>
 
 <body>
     <header class="header">
         <div class="container">
-           <div class="header__wrapper">
-            <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
+            <div class="header__wrapper">
+                <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-link"><a class="link" href="">Blog</a></li>
@@ -26,52 +28,43 @@
             </div>
         </div>
     </header>
-    
-  <section class="contact">
-   
-    <div class="container">
-       
-        <h1 class="contact__title">Contact Us</h1>
-        <div class="contact__select">
-            <p class="contact__btn"><a class="link" href="">Home</a></p>
-            <p><img class="contact__arrow" src="./images/Vector%20(right).png" alt="Vector"></p>
-            <p class="contact__btn"><a class="link" href="">Contact us</a></p>
+    <section class="contact">
+        <div class="container">
+            <h1 class="contact__title">Contact Us</h1>
+            <div class="contact__select">
+                <p class="contact__btn"><a class="link" href="">Home</a></p>
+                <p><img class="contact__arrow" src="./images/Vector%20(right).png" alt="Vector"></p>
+                <p class="contact__btn"><a class="link" href="">Contact us</a></p>
+            </div>
+            <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="contact__name">
+                    <label class="contact__item-name" for="name-input">Name</label>
+                    <input class="contact__line-name" id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+                <div class="contact__line-item">
+                    <div class="contact__phone">
+                        <label for="phone-input">Phone</label>
+                        <input class="contact__line-phone" id="phone-input" type="text"> </div>
+                    <div class="contact__email">
+                        <label for="email-input">E-mail</label>
+                        <input class="contact__line-email" id="email-input" type="email"> </div>
+                </div>
+                <div class="contact__massage">
+                    <label for="textarea">Massage</label>
+                    <textarea class="contact__line-text" id="textarea"> Massage </textarea>
+                </div>
+                <div class="contact__consent">
+                    <input id="check-consent" type="checkbox">
+                    <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
+                </div>
+                <button class="contact__button" type="submit">Submit</button>
+            </form>
+            <div class="contact__descript">
+                <p class="contact__text"> Our support team are on-hand to assist with any issues you are experiencing. </p>
+                <p class="contact__text"> Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
+                <p class="contact__subtext"> An expert is waiting to help you! </p>
+            </div>
         </div>
-        
-        <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="contact__name">
-                <label class="contact__item-name" for="name-input">Name</label>
-                <input class="contact__line-name" id="name-input" type="text" placeholder="Ivan Ivanov">
-            </div>
-                
-            <div class="contact__line-item">
-            <div class="contact__phone">
-                <label for="phone-input">Phone</label>
-                <input class="contact__line-phone" id="phone-input" type="text"> </div>
-            <div class="contact__email">
-                <label for="email-input">E-mail</label>
-                <input class="contact__line-email" id="email-input" type="email"> </div>
-             </div>
-             
-            <div class="contact__massage">
-                <label for="textarea">Massage</label>
-                <textarea class="contact__line-text" id="textarea"> Massage </textarea>
-            </div>
-            
-            <div class="contact__consent">
-                <input id="check-consent" type="checkbox">
-                <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
-            </div>
-            <button class="contact__button" type="submit">Submit</button>
-        </form>
-        
-        <div class="contact__descript">
-            <p class="contact__text"> Our support team are on-hand to assist with any issues you are experiencing. </p>
-            <p class="contact__text"> Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
-            <p class="contact__subtext"> An expert is waiting to help you! </p>
-        </div>
-    </div>
-</section>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
