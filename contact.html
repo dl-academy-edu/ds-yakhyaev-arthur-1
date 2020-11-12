@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"href="css/contact.css">
 </head>
 
 <body>
@@ -14,9 +16,9 @@
             <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-link"><a href="">Blog</a></li>
-                        <li class="header__nav-link"><a href="catalog.html">Catalog</a></li>
-                        <li class="header__nav-link"><a href="">About Us</a></li>
+                        <li class="header__nav-link"><a class="link" href="">Blog</a></li>
+                        <li class="header__nav-link"><a class="link" href="catalog.html">Catalog</a></li>
+                        <li class="header__nav-link"><a class="link" href="">About Us</a></li>
                     </ul>
                 </nav>
                 <div class="header__contact">
@@ -31,24 +33,31 @@
        
         <h1 class="contact__title">Contact Us</h1>
         <div class="contact__select">
-            <p class="contact__btn"><a href="">Home</a></p>
-            <p class="contact__btn"><a href="">Contact us</a></p>
+            <p class="contact__btn"><a class="link" href="">Home</a></p>
+            <p><img class="contact__arrow" src="./images/Vector%20(right).png" alt="Vector"></p>
+            <p class="contact__btn"><a class="link" href="">Contact us</a></p>
         </div>
         
         <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="contact__name">
-                <label for="name-input">Name</label>
-                <input id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+                <label class="contact__item-name" for="name-input">Name</label>
+                <input class="contact__line-name" id="name-input" type="text" placeholder="Ivan Ivanov">
+            </div>
+                
+            <div class="contact__line-item">
             <div class="contact__phone">
                 <label for="phone-input">Phone</label>
-                <input id="phone-input" type="text"> </div>
+                <input class="contact__line-phone" id="phone-input" type="text"> </div>
             <div class="contact__email">
                 <label for="email-input">E-mail</label>
-                <input id="email-input" type="email"> </div>
+                <input class="contact__line-email" id="email-input" type="email"> </div>
+             </div>
+             
             <div class="contact__massage">
                 <label for="textarea">Massage</label>
-                <textarea id="textarea"> Massage </textarea>
+                <textarea class="contact__line-text" id="textarea"> Massage </textarea>
             </div>
+            
             <div class="contact__consent">
                 <input id="check-consent" type="checkbox">
                 <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
@@ -86,8 +95,8 @@
                 </ul>
                 <h4 class="footer__title">Connect</h4>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                    <input id="email-input" type="email" placeholder="E-mail">
-                    <button class="footer__button"><a href="https://echo.htmlacademy.ru">Join</a></button>
+                    <input class="footer__email" id="email-input" type="email" placeholder="E-mail">
+                    <button class="footer__button"><a class="button" href="https://echo.htmlacademy.ru">Join</a></button>
                 </form>
                 <ul class="footer__icon">
                     <li class="footer__ic"> <img class="footer__img" src="./images/svg/facebook.svg" alt="face" width="30" height="30"> </li>
@@ -117,7 +126,7 @@
                         </ul>
                     </div>
                     <p class="footer__bottom-title">Copyright © 2018 Dlk • Design Life Kids</p>
-                    <p class="footer__bottom-title">Web Design — Direct Line Development</p>
+                    <p class="footer__title-web">Web Design — Direct Line Development</p>
                 </div>
             </div>
         </div>
