@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
 
 <body>
@@ -16,21 +17,24 @@
                 <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-link"><a class="link" href="">Blog</a></li>
-                        <li class="header__nav-link"><a class="link" href="catalog.html">Catalog</a></li>
-                        <li class="header__nav-link"><a class="link" href="">About Us</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="">Blog</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="catalog.html">Catalog</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="">About Us</a></li>
                     </ul>
                 </nav>
+               
                 <div class="header__contact">
                     <a class="header__search" href=""><img src="./images/svg/search.svg" alt="search-logo"></a> <a class="header__button" href="contact.html">Contact Us</a> </div>
-            </div>
+             </div>
+             
         </div>
     </header>
     <main class="main">
         <section class="intro">
             <div class="container">
                 <div class="intro__wrapper">
-                    <div class="intro__wrap"> <span class="intro__number">01</span>
+                    <div class="intro__wrap">
+                        <span class="intro__number">01</span>
                         <ul class="intro__list">
                             <li class="intro__link">
                                 <button class="intro__btn"></button>
@@ -45,6 +49,7 @@
                                 <button class="intro__btn"></button>
                             </li>
                         </ul>
+                        
                         <h1 class="intro__title">The oon noo collection</h1>
                         <p class="intro__subtitle">Designed in Slovenia</p>
                         <button class="intro__button"><a class="button" href="#">Explore now</a></button>
@@ -61,26 +66,35 @@
                 <div class="services__wrapper">
                     <h2 class="services__title">Category Products</h2>
                     <ul class="services__list">
-                        <li class="services__block"> <img class="services__img" src="images/service1.png" alt="service-1" width="244" height="177">
+                        <li class="services__block"> <img class="services__img" src="images/service1.png" alt="service-1" width="280" height="270">
                             <h3 class="services__sub">Apparel Kids</h3> </li>
-                        <li class="services__block"> <img class="services__img" src="images/service2.png" alt="service-2" width="208" height="244">
+                        <li class="services__block"> <img class="services__img" src="images/service2.png" alt="service-2" width="280" height="270">
                             <h3 class="services__sub">Holiday Shop</h3> </li>
-                        <li class="services__block"> <img class="services__img" src="images/service3.png" alt="service-3" width="270" height="270">
+                        <li class="services__block"> <img class="services__img" src="images/service3.png" alt="service-3" width="280" height="270">
                             <h3 class="services__sub">Toys</h3> </li>
-                        <li class="services__block"> <img class="services__img" src="images/service4.png" alt="service-4" width="240" height="250">
+                        <li class="services__block"> <img class="services__img" src="images/service4.png" alt="service-4" width="280" height="270">
                             <h3 class="services__sub">Accessories</h3> </li>
                     </ul>
                     <div class="services__select">
-                        <button class="services__btn"><img src="./images/Vector-left.png" alt="left"></button>
-                        <button class="services__btn"><img src="./images/Vector-right.png" alt="right"></button>
-                    </div>
+                        <button class="services__btn"><svg width="37" height="37" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"/>
+</svg>
+ </button>
+                        <button class="services__btn"><svg width="37" height="37" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"/>
+</svg>
+ </button>
+                    
                     <p class="services__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="delivery">
-            <div class="container"> <img src="images/deliver.png" alt="deliver-logo" width="480" height="559">
-                <div class="delivery__wrapper">
+            <div class="container"> 
+              <div class="delivery__wrapper">
+               <img src="images/deliver.png" alt="deliver-logo" width="480" height="559">
+                <div class="delivery__content">
                     <h2 class="delivery__title">Delivery</h2>
                     <ul class="delivery__list">
                         <li class="delivery__category">Delivery</li>
@@ -90,6 +104,7 @@
                     <p class="delivery__text"> Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical. </p>
                     <p class="delivery__subtext"> What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank! </p>
                     <button class="delivery__button"><a class="button" href="#">Learn More</a></button>
+                </div>
                 </div>
             </div>
         </section>

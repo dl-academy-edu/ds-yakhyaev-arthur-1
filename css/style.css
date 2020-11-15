@@ -1,93 +1,17 @@
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
-}
-
-.link {
-    text-decoration: none;
-    color: #1E0606;
-}
-
-.container {
-    max-width: 1400px;
-    padding: 0 110px;
-    margin: 0 auto;
-}
-
-.button {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/*HEADER
-==================*/
-
-.header {
-    margin-bottom: 129px;
-}
-
-.header__wrapper {
-    display: flex;
-    height: 52px;
-    margin-top: 50px;
-}
-
-.header__nav {
-    margin-right: 720px;
-}
-
-.header__nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.header__nav-list .link {
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: normal;
-    margin-left: 20px;
-    color: #1E0606;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.header__contact {
-    display: flex;
-    align-items: center;
-}
-
-.header__search {
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-}
-
-.header__button {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    color: #1E0606;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-
 /* INTRO
 ===================*/
-
+.intro{
+    margin-bottom: 90px;
+}
 .intro__wrapper {
     display: flex;
+    background: #EEE4DB;
+    
 }
 
 .intro__wrap {
     position: relative;
+    margin-top: 17px;
 }
 
 .intro__number {
@@ -96,16 +20,20 @@ body {
     font-weight: 300;
     font-size: 60px;
     line-height: 73px;
+    margin-left: 28px;
     color: #E4D9D0;
 }
 
 .intro__list {
+    margin-bottom: 0;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .intro__btn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 11px;
     width: 31px;
     height: 3px;
     background: #D6CAC2;
@@ -119,18 +47,23 @@ body {
 
 .intro__title {
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: bold;
     font-size: 40px;
-    line-height: 55px;
-    margin: 0;
-    padding: 0;
+    line-height: 45px;
+    width: 307px;
+    height: 88px;
+    margin-left: 133px;
+    margin-top: -66px;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
-
-.intro__logo {
+.intro__logo{
     position: absolute;
-    top: 88px;
+    top: 153px;
 }
+
+
 
 .intro__subtitle {
     font-family: 'Crimson Text', serif;
@@ -138,37 +71,67 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    margin-left: 133px;
 }
 
 .intro__button {
     width: 160px;
     height: 40px;
     text-transform: uppercase;
+    margin-left: 133px;
+    margin-bottom: 89px;
     background: black;
     border: 0;
+    
+}
+.intro__content-block{
+     background: #C29974;
+   
+  
+    
+}
+.itro__content{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin:0;
+    padding:11px 0;
 }
 
 
 /* SERVICES
 ===================*/
-
+.services{
+    margin-bottom: 90px;
+}
 .services__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
+    
 }
 
 .services__list {
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 33px;
+    margin-bottom: 0;
 }
 
 .services__block {
-    width: 280px;
-    height: 270px;
+    position: relative;
     list-style: none;
+    
+}
+.services__img{
+   margin-bottom: 33px;
 }
 
 .services__sub {
@@ -176,26 +139,62 @@ body {
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
+    position: absolute;
+    width: 129px;
+    top: 89px;
+    left: 70px;
+    text-align: center;
+    color: #fff;
     text-transform: uppercase;
+    
+}
+.services__select{
+    display: flex;
+   
 }
 
-.services__btn {
-    width: 37px;
-    height: 37px;
-    background: #E2F1F8;
+.services__btn { 
+    margin-right: 6px;
+    background: rgba(112, 187, 220, 0.2);
     border: 0;
+   
+}
+.services__text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 580px;
 }
 
 
 /* DELIVERY
 ===================*/
-
+.delivery{
+    margin-bottom: 90px;
+}
+.delivery__wrapper{
+    position: relative;
+    
+}
+.delivery__content{
+    position: absolute;
+    padding-right: 125px;
+    top: 1px;
+    left: 609px;
+}
 .delivery__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
+}
+.delivery__list{
+    padding-left: 0;
+    
 }
 
 .delivery__category {
@@ -205,6 +204,15 @@ body {
     font-size: 26px;
     line-height: 32px;
     list-style: none;
+}
+.delivery__category:hover,
+.delivery__category:focus{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    background: rgba(112, 187, 220, 0.2);
+    box-sizing: border-box;
 }
 
 .delivery__button {
@@ -219,6 +227,10 @@ body {
 /* PARTNERS
 ===================*/
 
+.partners{
+    margin-bottom: 90px;
+    
+}
 .partners__list {
     display: flex;
     justify-content: space-between;
@@ -253,70 +265,17 @@ body {
     border: 0;
 }
 
-
-/* Footer
-===================*/
-
-.footer__title {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #AAAAAA;
-}
-
-.footer__link {
-    list-style: none;
-}
-
-.footer__button {
-    width: 81px;
-    height: 40px;
-    background: black;
-    text-transform: uppercase;
-    border: 0;
-}
-
-.footer__email {
-    width: 299px;
-    height: 40px;
-}
-
-.footer__icon {
-    display: flex;
-    list-style: none;
-}
-
-.footer__ic {
-    margin-right: 10px;
-}
-
-.footer__bottom-rating {
-    display: inline-flex;
-}
-
-.footer__bottom-list {
-    display: flex;
-    list-style: none;
-}
-
-.footer__title-web {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #AAAAAA;
-}
-
-
 /* POPUP
 ===================*/
 .popup__form{
-    max-width: 680px;
+    width: 680px;
     height: 542px;
+    padding-top: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
     background: #E5EAF8;
 }
-.popup__wrapper{
-    padding: 42px 40px;
-}
+
 
 .popup__name{
     display: flex;
@@ -362,7 +321,7 @@ body {
     margin-bottom: 22px;
 }
 .popup__text{
-    margin-bottom: 20px;
+   
 }
 .popup__button{
     font-size: 16px;
@@ -370,6 +329,7 @@ body {
     line-height: 22px;
     width: 106px;
     height: 40px;
+    margin-top: 22px;
     text-transform: uppercase;
     background: #C1C1C1;
     opacity: 1;
