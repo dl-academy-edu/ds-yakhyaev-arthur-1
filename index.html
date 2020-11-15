@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
 
 <body>
@@ -14,40 +17,47 @@
                 <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-link"><a href="">Blog</a></li>
-                        <li class="header__nav-link"><a href="catalog.html">Catalog</a></li>
-                        <li class="header__nav-link"><a href="">About Us</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="">Blog</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="catalog.html">Catalog</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="">About Us</a></li>
                     </ul>
                 </nav>
+               
                 <div class="header__contact">
                     <a class="header__search" href=""><img src="./images/svg/search.svg" alt="search-logo"></a> <a class="header__button" href="contact.html">Contact Us</a> </div>
-            </div>
+             </div>
+             
         </div>
     </header>
     <main class="main">
         <section class="intro">
             <div class="container">
                 <div class="intro__wrapper">
-                    <div class="intro__wrap"> <span class="intro__number">01</span>
+                    <div class="intro__wrap">
+                        <span class="intro__number">01</span>
                         <ul class="intro__list">
                             <li class="intro__link">
-                                <button class="intro__btn"><a href="">1</a></button>
+                                <button class="intro__btn"></button>
                             </li>
                             <li class="intro__link">
-                                <button class="intro__btn"><a href="">2</a></button>
+                                <button class="intro__btn"></button>
                             </li>
                             <li class="intro__link">
-                                <button class="intro__btn"><a href="">3</a></button>
+                                <button class="intro__btn"></button>
                             </li>
                             <li class="intro__link">
-                                <button class="intro__btn"><a href="">4</a></button>
+                                <button class="intro__btn"></button>
                             </li>
                         </ul>
-                        <h1 class="intro__title">The oon noo collection</h1> <img class="intro__logo" src="./images/monster.png" alt="monster" width="635" height="461">
+                        
+                        <h1 class="intro__title">The oon noo collection</h1>
                         <p class="intro__subtitle">Designed in Slovenia</p>
-                        <button class="intro__button"><a href="#">Explore now</a></button>
-                        <p class="intro__text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+                        <button class="intro__button"><a class="button" href="#">Explore now</a></button>
                     </div>
+                    <div class="intro__logo-inner"> <img class="intro__logo" src="./images/monster.png" alt="monster" width="635" height="461"> </div>
+                </div>
+                <div class="intro__content-block">
+                    <p class="itro__content">Free (continental) USA shipping on all orders of $100 USD or more!</p>
                 </div>
             </div>
         </section>
@@ -56,26 +66,35 @@
                 <div class="services__wrapper">
                     <h2 class="services__title">Category Products</h2>
                     <ul class="services__list">
-                        <li class="services__block"> <img class="services__img" src="images/service1.png" alt="service-1" width="244" height="177">
-                            <h3 class="services__sub">Apparel Kids</h3></li>
-                        <li class="services__block"> <img class="services__img" src="images/service2.png" alt="service-2" width="208" height="244">
+                        <li class="services__block"> <img class="services__img" src="images/service1.png" alt="service-1" width="280" height="270">
+                            <h3 class="services__sub">Apparel Kids</h3> </li>
+                        <li class="services__block"> <img class="services__img" src="images/service2.png" alt="service-2" width="280" height="270">
                             <h3 class="services__sub">Holiday Shop</h3> </li>
-                        <li class="services__block"> <img class="services__img" src="images/service3.png" alt="service-3" width="270" height="270">
+                        <li class="services__block"> <img class="services__img" src="images/service3.png" alt="service-3" width="280" height="270">
                             <h3 class="services__sub">Toys</h3> </li>
-                        <li class="services__block"> <img class="services__img" src="images/service4.png" alt="service-4" width="240" height="250">
+                        <li class="services__block"> <img class="services__img" src="images/service4.png" alt="service-4" width="280" height="270">
                             <h3 class="services__sub">Accessories</h3> </li>
                     </ul>
                     <div class="services__select">
-                        <button class="services__btn">1</button>
-                        <button class="services__btn">2</button>
-                    </div>
+                        <button class="services__btn"><svg width="37" height="37" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"/>
+</svg>
+ </button>
+                        <button class="services__btn"><svg width="37" height="37" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"/>
+</svg>
+ </button>
+                    
                     <p class="services__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="delivery">
-            <div class="container"> <img src="images/deliver.png" alt="deliver-logo" width="480" height="559">
-                <div class="delivery__wrapper">
+            <div class="container"> 
+              <div class="delivery__wrapper">
+               <img src="images/deliver.png" alt="deliver-logo" width="480" height="559">
+                <div class="delivery__content">
                     <h2 class="delivery__title">Delivery</h2>
                     <ul class="delivery__list">
                         <li class="delivery__category">Delivery</li>
@@ -84,7 +103,8 @@
                     </ul>
                     <p class="delivery__text"> Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical. </p>
                     <p class="delivery__subtext"> What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank! </p>
-                    <button class="delivery__button"><a href="#">Learn More</a></button>
+                    <button class="delivery__button"><a class="button" href="#">Learn More</a></button>
+                </div>
                 </div>
             </div>
         </section>
@@ -104,7 +124,7 @@
                     <h2 class="map__title">Design Life Kids</h2>
                     <p class="map__sub">About Us</p>
                     <p class="map__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                    <button class="map__button"><a href="#">Buy now</a></button>
+                    <button class="map__button"><a class="button" href="#">Buy now</a></button>
                 </div>
                 <div class="map__contacts">
                     <h2 class="map__title">Contacts</h2>
@@ -117,26 +137,26 @@
             <div class="footer__wrapper">
                 <h4 class="footer__title">Navigation</h4>
                 <ul class="footer__list">
-                    <li class="footer__link"><a href="">About Us</a></li>
-                    <li class="footer__link"><a href="">Blog</a></li>
-                    <li class="footer__link"><a href="">Design Services</a></li>
-                    <li class="footer__link"><a href="">Featured On</a></li>
-                    <li class="footer__link"><a href="">2018 Holiday Catalog</a></li>
-                    <li class="footer__link"><a href="">Shop By Designer</a></li>
+                    <li class="footer__link"><a class="link" href="">About Us</a></li>
+                    <li class="footer__link"><a class="link" href="">Blog</a></li>
+                    <li class="footer__link"><a class="link" href="">Design Services</a></li>
+                    <li class="footer__link"><a class="link" href="">Featured On</a></li>
+                    <li class="footer__link"><a class="link" href="">2018 Holiday Catalog</a></li>
+                    <li class="footer__link"><a class="link" href="">Shop By Designer</a></li>
                 </ul>
                 <h4 class="footer__title">Customer Information</h4>
                 <ul class="footer__list">
-                    <li class="footer__link"><a href="">Contact Us</a></li>
-                    <li class="footer__link"><a href="">Sale Exclusions</a></li>
-                    <li class="footer__link"><a href="">Shipping & Returns</a></li>
-                    <li class="footer__link"><a href="">Terms & Conditions</a></li>
-                    <li class="footer__link"><a href="">Privacy Policy</a></li>
-                    <li class="footer__link"><a href="">Search</a></li>
+                    <li class="footer__link"><a class="link" href="">Contact Us</a></li>
+                    <li class="footer__link"><a class="link" href="">Sale Exclusions</a></li>
+                    <li class="footer__link"><a class="link" href="">Shipping & Returns</a></li>
+                    <li class="footer__link"><a class="link" href="">Terms & Conditions</a></li>
+                    <li class="footer__link"><a class="link" href="">Privacy Policy</a></li>
+                    <li class="footer__link"><a class="link" href="">Search</a></li>
                 </ul>
                 <h4 class="footer__title">Connect</h4>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                    <input id="email-input" type="email" placeholder="E-mail">
-                    <button class="footer__button"><a href="https://echo.htmlacademy.ru">Join</a></button>
+                    <input class="footer__email" id="email-input" type="email" placeholder="E-mail">
+                    <button class="footer__button"><a class="button" href="https://echo.htmlacademy.ru">Join</a></button>
                 </form>
                 <ul class="footer__icon">
                     <li class="footer__ic"> <img class="footer__img" src="./images/svg/facebook.svg" alt="face" width="30" height="30"> </li>
@@ -148,80 +168,59 @@
                     <div class="footer__bottom-rating">
                         <p class="footer__bottom-title">Company Rating </p>
                         <ul class="footer__bottom-list">
-                            <li>
+                            <li class="footer__star">
                                 <button><img src="images/Star1.png" alt="star1" width="17" height="16"></button>
                             </li>
-                            <li>
+                            <li class="footer__star">
                                 <button><img src="images/star2.png" alt="star2" width="17" height="16"></button>
                             </li>
-                            <li>
+                            <li class="footer__star">
                                 <button><img src="images/star3.png" alt="star3" width="17" height="16"></button>
                             </li>
-                            <li>
+                            <li class="footer__star">
                                 <button><img src="images/star4.png" alt="star4" width="17" height="16"></button>
                             </li>
-                            <li>
+                            <li class="footer__star">
                                 <button><img src="images/star5.png" alt="star5" width="17" height="16"></button>
                             </li>
                         </ul>
                     </div>
                     <p class="footer__bottom-title">Copyright © 2018 Dlk • Design Life Kids</p>
-                    <p class="footer__bottom-title">Web Design — Direct Line Development</p>
+                    <p class="footer__title-web">Web Design — Direct Line Development</p>
                 </div>
             </div>
         </div>
     </footer>
     <section class="popup" id="popup1">
-       
-            <button type="button">&times;</button>
-            
+        <button type="button">&times;</button>
         <form class="popup__form" action="" method="post">
-           
+           <div class="popup__wrapper">
             <div class="popup__name">
                 <label for="name-input">Name</label>
-                <input id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+                <input class="popup__form-name" id="name-input" type="text" ></div>
+                
+                <div class="popup__form-wrap">
             <div class="popup__phone">
                 <label for="phone-input">Phone</label>
-                <input id="phone-input" type="text" > </div>
+                <input class="popup__phone-email" id="phone-input" type="text"> </div>
             <div class="popup__email">
                 <label for="email-input">E-mail</label>
-                <input id="email-input" type="email" > </div>
+                <input class="popup__phone-email" id="email-input" type="email"> </div>
+                </div>
+                
             <div class="popup__massage">
                 <label for="textarea">Massage</label>
-                <textarea id="textarea"> Massage </textarea>
+                <textarea class="popup__textarea"  id="textarea"> Massage </textarea>
             </div>
             <div class="popup__consent">
                 <input id="check-consent" type="checkbox">
-                <label for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
+                <label class="popup__text" for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
             </div>
-            
             <button class="popup__button" type="button">Submit</button>
-        
+            </div>
         </form>
     </section>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

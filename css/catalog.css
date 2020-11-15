@@ -1,0 +1,41 @@
+
+/*CATALOG
+==================*/
+
+.catalog__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+}
+
+.catalog__select {
+    display: flex;
+    align-items: center;
+}
+
+.catalog__btn {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+}
+
+.catalog__arrow {
+    margin: 0 20px;
+}
+
+.catalog__list {
+    list-style: none;
+}
+
+.catalog__sub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+}

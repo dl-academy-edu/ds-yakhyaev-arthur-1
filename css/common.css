@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+.container {
+    max-width: 1400px;
+    padding-left:  110px;
+    padding-right: 110px;
+    margin: 0 auto;
+}
+
+.link-nav{
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-left: 20px;
+    color: #1E0606;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.link {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    text-decoration: none;
+    color: #1E0606;
+}
+
+
+
+.button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*HEADER
+==================*/
+
+.header {
+    margin-top: 50px;
+    margin-bottom:129px;
+    
+}
+
+.header__wrapper {
+    display: flex;
+    
+    
+}
+
+.header__nav {
+   margin-right: 720px;
+    
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.header__button {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*Footer
+==================*/
+
+.footer__title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}
+
+.footer__link {
+    list-style: none;
+}
+
+.footer__button {
+    width: 81px;
+    height: 40px;
+    background: black;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.footer__email {
+    width: 299px;
+    height: 40px;
+}
+
+.footer__icon {
+    display: flex;
+    list-style: none;
+}
+
+.footer__ic {
+    margin-right: 10px;
+}
+
+.footer__bottom-rating {
+    display: inline-flex;
+}
+
+.footer__bottom-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer__title-web {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}
