@@ -7,7 +7,8 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/toys.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css"> </head>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
 
 <body>
     <header class="header">
@@ -29,172 +30,188 @@
     <section class="toys">
         <div class="container">
             <h1 class="toys__title">Toy for kids</h1>
-            <div class="toys__select"> <a class="link" href="index.html">Home</a> <img class="toys__arrow " src="./images/Vector%20(right).png" alt="Vector"><a class="link" href="catalog.html">Catalog</a> <img class="toys__arrow" src="./images/Vector%20(right).png" alt="Vector"> <a class="link" href="#">Toys</a></div>
+            <div class="toys__select"> <a class="link" href="index.html">Home</a> <img class="toys__arrow " src="./images/Vector%20(right).png" alt="Vector"><a class="link" href="catalog.html">Catalog</a> <img class="toys__arrow" src="./images/Vector%20(right).png" alt="Vector"> <a class="link" href="#">Toys</a> </div>
             <form class="toys__form" action="" method="post">
-                <div class="toys__wrapper">
-                    <h3>Cost</h3>
-                    <div>
-                        <label for="cost"></label>
-                        <input type="range" id=cost name="cost" min="0" max="500"> </div>
-                    <h3>Color</h3>
-                    <div>
-                        <input type="Checkbox" id="black" value="black" name="Color" checked>
-                        <label for="black">Black</label>
+                <div class="toys__wrap">
+                    <div class="toys__cost">
+                        <h3>Cost</h3>
+                        <div>
+                            <label for="cost"></label>
+                            <input type="range" id=cost name="cost" min="0" max="500"> </div>
                     </div>
-                    <div>
-                        <input type="Checkbox" id="blue" value="blue" name="Color">
-                        <label for="blue">Blue</label>
+                    <div class="toys__color">
+                        <h3>Color</h3>
+                        <div>
+                            <input type="Checkbox" id="black" value="black" name="Color" checked>
+                            <label for="black">Black</label>
+                        </div>
+                        <div>
+                            <input type="Checkbox" id="blue" value="blue" name="Color">
+                            <label for="blue">Blue</label>
+                        </div>
+                        <div>
+                            <input type="Checkbox" id="green" value="green" name="Color">
+                            <label for="green">Green</label>
+                        </div>
+                        <div>
+                            <input type="Checkbox" id="white" value="white" name="Color">
+                            <label for="white">White</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="Checkbox" id="green" value="green" name="Color">
-                        <label for="green">Green</label>
+                    <div class="toys__delivery">
+                        <h3>Delivery</h3>
+                        <div>
+                            <input type="radio" id="Free shipping" value="Free shipping" name="shipping">
+                            <label for="Free shipping">Free shipping</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Fast shipping" value="Fast shipping" name="shipping" checked>
+                            <label for="Fast shipping">Fast shipping</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="Checkbox" id="white" value="white" name="Color">
-                        <label for="white">White</label>
-                    </div>
-                    <h3>Delivery</h3>
-                    <div>
-                        <input type="radio" id="Free shipping" value="Free shipping" name="shipping">
-                        <label for="Free shipping">Free shipping</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="Fast shipping" value="Fast shipping" name="shipping" checked>
-                        <label for="Fast shipping">Fast shipping</label>
-                    </div>
-                    <h3>Amount</h3>
-                    <div>
-                        <input type="radio" id="0-5" value="0-5" name="Amount" checked>
-                        <label for="0-5">0-5</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="10-20" value="10-20" name="Amount">
-                        <label for="10-20">10-20</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="20-50" value="20-50" name="Amount">
-                        <label for="20-50">20-50</label>
+                    <div class="toys__amount">
+                        <h3>Amount</h3>
+                        <div>
+                            <input type="radio" id="0-5" value="0-5" name="Amount" checked>
+                            <label for="0-5">0-5</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="10-20" value="10-20" name="Amount">
+                            <label for="10-20">10-20</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="20-50" value="20-50" name="Amount">
+                            <label for="20-50">20-50</label>
+                        </div>
                     </div>
                     <button class="toys__button" type="submit"><a href="#">Apply</a></button>
                 </div>
             </form>
-            <ul>
-                <li>
-                    <a href="#"><img src="./images/toys/toys-1.png" alt="Toys1">
-                        <h4>Sharky bean bag chair cover</h4>
-                        <p>$60.00 USD</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=""><img src="./images/toys/toys-2.png" alt="Toys2">
-                        <h4>Brass deco frames</h4>
-                        <p>$66.00 USD</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=""><img src="./images/toys/toys-3.png" alt="Toys3">
-                        <h4>Cibo full apron</h4>
-                        <p>$60.00 USD</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=""><img src="./images/toys/toys-4.png" alt="Toys4">
-                        <h4>Gatcha gatcha gumbal machine</h4>
-                        <p>$56.00 USD</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=""> <img src="./images/toys/toys-5.png" alt="Toys5">
-                        <h4>Christmas advent scented candle</h4>
-                        <p>$29.00 USD</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=""> <img src="./images/toys/toys-6.png" alt="Toys6">
-                        <h4>Tangle spinning tea light</h4>
-                        <p>$56.00 USD</p>
-                    </a>
-                </li>
-            </ul>
-            
-            <div class="toys__select-button">
-                <button>
-                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" /> </svg>
-                </button>
-                <button>
-                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" /> </svg>
-                </button>
+            <div class="toys__wrapper">
+                <ul class="toys__list">
+                    <li class="toys__icon">
+                        <a class="toys__link" href="#"><img src="./images/toys/toys-1.png" alt="Toys1" width="380" height="385">
+                            <h4 class="toys__title-list">Sharky bean bag chair cover</h4>
+                            <p class="toys__price">$60.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys__icon">
+                        <a class="toys__link" href=""><img src="./images/toys/toys-2.png" alt="Toys2" width="380" height="385">
+                            <h4 class="toys__title-list">Brass deco frames</h4>
+                            <p class="toys__price">$66.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys__icon">
+                        <a class="toys__link" href=""><img src="./images/toys/toys-3.png" alt="Toys3" width="380" height="385">
+                            <h4 class="toys__title-list">Cibo full apron</h4>
+                            <p class="toys__price">$60.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys__icon">
+                        <a class="toys__link" href=""><img src="./images/toys/toys-4.png" alt="Toys4" width="380" height="385">
+                            <h4 class="toys__title-list">Gatcha gatcha gumbal machine</h4>
+                            <p class="toys__price">$56.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys__icon">
+                        <a class="toys__link" href=""> <img src="./images/toys/toys-5.png" alt="Toys5" width="380" height="385">
+                            <h4 class="toys__title-list">Christmas advent scented candle</h4>
+                            <p class="toys__price">$29.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys__icon">
+                        <a class="toys__link" href=""> <img src="./images/toys/toys-6.png" alt="Toys6" width="380" height="385">
+                            <h4 class="toys__title-list">Tangle spinning tea light</h4>
+                            <p class="toys__price">$56.00 USD</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="toys__select-button">
+                    <button>
+                        <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" /> </svg>
+                    </button>
+                    <ul class="toys__list-button">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                    <button>
+                        <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" /> </svg>
+                    </button>
                 </div>
-          
-            <ul class="toys__list-button">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-            </ul>
-           
+            </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                <h4 class="footer__title">Navigation</h4>
-                <ul class="footer__list">
-                    <li class="footer__link"><a class="link" href="">About Us</a></li>
-                    <li class="footer__link"><a class="link" href="">Blog</a></li>
-                    <li class="footer__link"><a class="link" href="">Design Services</a></li>
-                    <li class="footer__link"><a class="link" href="">Featured On</a></li>
-                    <li class="footer__link"><a class="link" href="">2018 Holiday Catalog</a></li>
-                    <li class="footer__link"><a class="link" href="">Shop By Designer</a></li>
-                </ul>
-                <h4 class="footer__title">Customer Information</h4>
-                <ul class="footer__list">
-                    <li class="footer__link"><a class="link" href="">Contact Us</a></li>
-                    <li class="footer__link"><a class="link" href="">Sale Exclusions</a></li>
-                    <li class="footer__link"><a class="link" href="">Shipping & Returns</a></li>
-                    <li class="footer__link"><a class="link" href="">Terms & Conditions</a></li>
-                    <li class="footer__link"><a class="link" href="">Privacy Policy</a></li>
-                    <li class="footer__link"><a class="link" href="">Search</a></li>
-                </ul>
-                <h4 class="footer__title">Connect</h4>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                    <input class="footer__email" id="email-input" type="email" placeholder="E-mail">
-                    <button class="footer__button"><a class="button" href="https://echo.htmlacademy.ru">Join</a></button>
-                </form>
-                <ul class="footer__icon">
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/facebook.svg" alt="face" width="30" height="30"> </li>
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/pinterest.svg" alt="prin" width="30" height="30"> </li>
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/twitter.svg" alt="twit" width="30" height="30"> </li>
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/instagram.svg" alt="inst" width="30" height="30"> </li>
-                </ul>
-                <div class="footer__bottom">
-                    <div class="footer__bottom-rating">
-                        <p class="footer__bottom-title">Company Rating </p>
-                        <ul class="footer__bottom-list">
-                            <li class="footer__star">
-                                <button><img src="images/Star1.png" alt="star1" width="17" height="16"></button>
-                            </li>
-                            <li class="footer__star">
-                                <button><img src="images/star2.png" alt="star2" width="17" height="16"></button>
-                            </li>
-                            <li class="footer__star">
-                                <button><img src="images/star3.png" alt="star3" width="17" height="16"></button>
-                            </li>
-                            <li class="footer__star">
-                                <button><img src="images/star4.png" alt="star4" width="17" height="16"></button>
-                            </li>
-                            <li class="footer__star">
-                                <button><img src="images/star5.png" alt="star5" width="17" height="16"></button>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="footer__bottom-title">Copyright © 2018 Dlk • Design Life Kids</p>
-                    <p class="footer__title-web">Web Design — Direct Line Development</p>
+                <div class="footer__navigation">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__list">
+                        <li class="footer__link"><a class="link" href="">About Us</a></li>
+                        <li class="footer__link"><a class="link" href="">Blog</a></li>
+                        <li class="footer__link"><a class="link" href="">Design Services</a></li>
+                        <li class="footer__link"><a class="link" href="">Featured On</a></li>
+                        <li class="footer__link"><a class="link" href="">2018 Holiday Catalog</a></li>
+                        <li class="footer__link"><a class="link" href="">Shop By Designer</a></li>
+                    </ul>
                 </div>
+                <div class="footer__customer">
+                    <h4 class="footer__title">Customer Information</h4>
+                    <ul class="footer__list">
+                        <li class="footer__link"><a class="link" href="">Contact Us</a></li>
+                        <li class="footer__link"><a class="link" href="">Sale Exclusions</a></li>
+                        <li class="footer__link"><a class="link" href="">Shipping & Returns</a></li>
+                        <li class="footer__link"><a class="link" href="">Terms & Conditions</a></li>
+                        <li class="footer__link"><a class="link" href="">Privacy Policy</a></li>
+                        <li class="footer__link"><a class="link" href="">Search</a></li>
+                    </ul>
+                </div>
+                <div class="footer__connect">
+                    <h4 class="footer__title">Connect</h4>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <input class="footer__email" id="email-input" type="email" placeholder="E-mail">
+                        <button class="footer__button"><a class="button" href="https://echo.htmlacademy.ru">Join</a></button>
+                    </form>
+                    <ul class="footer__icon">
+                        <li class="footer__ic"> <img class="footer__img" src="./images/svg/facebook.svg" alt="face" width="30" height="30"> </li>
+                        <li class="footer__ic"> <img class="footer__img" src="./images/svg/pinterest.svg" alt="prin" width="30" height="30"> </li>
+                        <li class="footer__ic"> <img class="footer__img" src="./images/svg/twitter.svg" alt="twit" width="30" height="30"> </li>
+                        <li class="footer__ic"> <img class="footer__img" src="./images/svg/instagram.svg" alt="inst" width="30" height="30"> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-rating">
+                    <p class="footer__bottom-title">Company Rating </p>
+                    <ul class="footer__bottom-list">
+                        <li class="footer__star">
+                            <button><img src="images/Star1.png" alt="star1" width="17" height="16"></button>
+                        </li>
+                        <li class="footer__star">
+                            <button><img src="images/star2.png" alt="star2" width="17" height="16"></button>
+                        </li>
+                        <li class="footer__star">
+                            <button><img src="images/star3.png" alt="star3" width="17" height="16"></button>
+                        </li>
+                        <li class="footer__star">
+                            <button><img src="images/star4.png" alt="star4" width="17" height="16"></button>
+                        </li>
+                        <li class="footer__star">
+                            <button><img src="images/star5.png" alt="star5" width="17" height="16"></button>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__bottom-title">Copyright © 2018 Dlk • Design Life Kids</p>
+                <p class="footer__title-web">Web Design — Direct Line Development</p>
             </div>
         </div>
     </footer>
+</body>
+
+</html>
 
 

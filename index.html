@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="css/common.css">
+   <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                 <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-link"><a class="link-nav" href="">Blog</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="blog.html">Blog</a></li>
                         <li class="header__nav-link"><a class="link-nav" href="catalog.html">Catalog</a></li>
                         <li class="header__nav-link"><a class="link-nav" href="">About Us</a></li>
                     </ul>
@@ -93,7 +93,9 @@
         <section class="delivery">
             <div class="container"> 
               <div class="delivery__wrapper">
+              <div class="delivery__logo">
                <img src="images/deliver.png" alt="deliver-logo" width="480" height="559">
+               </div>
                 <div class="delivery__content">
                     <h2 class="delivery__title">Delivery</h2>
                     <ul class="delivery__list">
@@ -120,21 +122,31 @@
         </section>
         <section class="map">
             <div class="container">
+               <div class="map__wrapper">
                 <div class="map__design">
-                    <h2 class="map__title">Design Life Kids</h2>
-                    <p class="map__sub">About Us</p>
-                    <p class="map__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                    <button class="map__button"><a class="button" href="#">Buy now</a></button>
+                    <div class="map__design-wrap">
+                        <h2 class="map__title">Design Life Kids</h2>
+                        <p class="map__sub">About Us</p>
+                        <p class="map__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                        <button class="map__button"><a class="button" href="#">Buy now</a></button>
+                    </div>
                 </div>
                 <div class="map__contacts">
-                    <h2 class="map__title">Contacts</h2>
-                    <p class="map__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p> <img class="map__img" src="images/map.png" alt="map-logo" width="483" height="196"> </div>
+                  <div class="map__contacts-wrap">
+                    <h2 class="map__title-cont">Contacts</h2>
+                    <p class="map__text-cont">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                   </div>
+                     <img class="map__img" src="images/map.png" alt="map-logo" width="483" height="196">
+                   </div>
+           
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
+               <div class="footer__navigation">
                 <h4 class="footer__title">Navigation</h4>
                 <ul class="footer__list">
                     <li class="footer__link"><a class="link" href="">About Us</a></li>
@@ -144,6 +156,8 @@
                     <li class="footer__link"><a class="link" href="">2018 Holiday Catalog</a></li>
                     <li class="footer__link"><a class="link" href="">Shop By Designer</a></li>
                 </ul>
+                </div>
+                <div class="footer__customer">
                 <h4 class="footer__title">Customer Information</h4>
                 <ul class="footer__list">
                     <li class="footer__link"><a class="link" href="">Contact Us</a></li>
@@ -153,6 +167,8 @@
                     <li class="footer__link"><a class="link" href="">Privacy Policy</a></li>
                     <li class="footer__link"><a class="link" href="">Search</a></li>
                 </ul>
+                </div>
+                <div class="footer__connect">
                 <h4 class="footer__title">Connect</h4>
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <input class="footer__email" id="email-input" type="email" placeholder="E-mail">
@@ -164,6 +180,8 @@
                     <li class="footer__ic"> <img class="footer__img" src="./images/svg/twitter.svg" alt="twit" width="30" height="30"> </li>
                     <li class="footer__ic"> <img class="footer__img" src="./images/svg/instagram.svg" alt="inst" width="30" height="30"> </li>
                 </ul>
+                </div>
+               </div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-rating">
                         <p class="footer__bottom-title">Company Rating </p>
@@ -187,8 +205,8 @@
                     </div>
                     <p class="footer__bottom-title">Copyright © 2018 Dlk • Design Life Kids</p>
                     <p class="footer__title-web">Web Design — Direct Line Development</p>
-                </div>
-            </div>
+                
+             </div>
         </div>
     </footer>
     <section class="popup" id="popup1">

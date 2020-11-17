@@ -173,18 +173,18 @@
 /* DELIVERY
 ===================*/
 .delivery{
+    max-width: 1300px;
+    padding: 0;
     margin-bottom: 90px;
 }
 .delivery__wrapper{
-    position: relative;
+    display: flex;
     
 }
-.delivery__content{
-    position: absolute;
-    padding-right: 125px;
-    top: 1px;
-    left: 609px;
+.delivery__logo{
+    margin-right: 120px;
 }
+
 .delivery__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -193,7 +193,7 @@
     text-transform: uppercase;
 }
 .delivery__list{
-    padding-left: 0;
+   padding-left: 0;
     
 }
 
@@ -228,25 +228,49 @@
 ===================*/
 
 .partners{
-    margin-bottom: 90px;
+    margin-bottom: 116px;
     
 }
 .partners__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 
 
 /* MAP
 ===================*/
+.map{
+    max-width: 1363px;
+    margin-bottom: 147px;
+  
+   
+}
+.map__wrapper{
+    display: flex;
+}
+.map__design{
+   
+    margin-right: 57px;
+}
+
 
 .map__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
+    margin-top: -54px;
+    margin-bottom: 9px;
     text-transform: uppercase;
+}
+.map__design-wrap{
+    width: 543px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background: #E1F0F7;
 }
 
 .map__sub {
@@ -255,6 +279,10 @@
     font-weight: normal;
     font-size: 26px;
     line-height: 32px;
+    margin: 0;
+}
+.map__text{
+    width: 483px;
 }
 
 .map__button {
@@ -263,6 +291,40 @@
     background: black;
     text-transform: uppercase;
     border: 0;
+}
+.map__contacts{
+   position: relative;
+    
+}
+.map__contacts-wrap{
+    width: 543px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background: #E1F0F7;
+}
+
+.map__title-cont{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    margin-top: -34px;
+    margin-bottom: 20px;
+    margin-left: 29px;
+    text-transform: uppercase;
+}
+.map__text-cont{
+   width: 483px;
+   padding-top: 3px;
+    margin-left: 31px;
+    
+}
+.map__img{
+    position: absolute;
+    top: 129px;
+    left: 30px;
+   
 }
 
 /* POPUP

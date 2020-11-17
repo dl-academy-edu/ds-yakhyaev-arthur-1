@@ -90,15 +90,30 @@ body {
 }
 /*Footer
 ==================*/
+.footer{
+    width: 100%;
+    background: #434343;
+    padding: 100px 0;
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
 
 .footer__title {
+    
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     color: #AAAAAA;
+   
 }
 
 .footer__link {
+    
     list-style: none;
 }
 
@@ -122,6 +137,11 @@ body {
 
 .footer__ic {
     margin-right: 10px;
+}
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .footer__bottom-rating {
