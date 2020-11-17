@@ -1,10 +1,11 @@
 /* BLOG
 ======================*/
 
-.blog{
+.blog {
     margin-bottom: 60px;
 }
-.blog__title{
+
+.blog__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -12,30 +13,30 @@
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-.blog__select{
+
+.blog__select {
     margin-bottom: 50px;
 }
-.blog__arrow{
+
+.blog__arrow {
     margin: 0 20px;
 }
 
-
-.blog__wrapper{
+.blog__wrapper {
     display: flex;
     flex-wrap: wrap;
-  
-}
-.blog__item{
-    width: 380px;
-    margin-right: 20px;   
 }
 
-.blog__date{
+.blog__item {
+    width: 380px;
+}
+
+.blog__date {
     margin-bottom: 7px;
     color: #818181;
 }
 
-.blog__subtitle{
+.blog__subtitle {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -46,19 +47,20 @@
     color: #1E0606;
 }
 
-.blog__text{
+.blog__text {
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 13px;
     padding-bottom: 20px;
 }
-.blog__select-button{
+
+.blog__select-button {
     display: flex;
     justify-content: space-between;
 }
-.blog__list-button{
+
+.blog__list-button {
     display: flex;
     list-style: none;
-    
 }

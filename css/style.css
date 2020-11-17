@@ -1,12 +1,13 @@
 /* INTRO
 ===================*/
-.intro{
+
+.intro {
     margin-bottom: 90px;
 }
+
 .intro__wrapper {
     display: flex;
     background: #EEE4DB;
-    
 }
 
 .intro__wrap {
@@ -27,7 +28,6 @@
 .intro__list {
     margin-bottom: 0;
     list-style: none;
-    
 }
 
 .intro__btn {
@@ -58,12 +58,11 @@
     margin-bottom: 0;
     text-transform: uppercase;
 }
-.intro__logo{
+
+.intro__logo {
     position: absolute;
     top: 153px;
 }
-
-
 
 .intro__subtitle {
     font-family: 'Crimson Text', serif;
@@ -82,15 +81,13 @@
     margin-bottom: 89px;
     background: black;
     border: 0;
-    
 }
-.intro__content-block{
-     background: #C29974;
-   
-  
-    
+
+.intro__content-block {
+    background: #C29974;
 }
-.itro__content{
+
+.itro__content {
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -98,41 +95,39 @@
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin:0;
-    padding:11px 0;
+    margin: 0;
+    padding: 11px 0;
 }
 
 
 /* SERVICES
 ===================*/
-.services{
+
+.services {
     margin-bottom: 90px;
 }
+
 .services__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
-    
 }
 
 .services__list {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
-    padding-right: 33px;
     margin-bottom: 0;
 }
 
 .services__block {
     position: relative;
     list-style: none;
-    
 }
-.services__img{
-   margin-bottom: 33px;
-}
+
+.services__img {}
 
 .services__sub {
     font-family: 'Montserrat', sans-serif;
@@ -146,42 +141,46 @@
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    
-}
-.services__select{
-    display: flex;
-   
 }
 
-.services__btn { 
+.services__select {
+    display: flex;
+    align-items: center;
+}
+
+.services__btn {
+    margin-top: 28px;
     margin-right: 6px;
     background: rgba(112, 187, 220, 0.2);
+    box-sizing: border-box;
     border: 0;
-   
 }
-.services__text{
+
+.services__text-select {
+    margin-top: 23px;
+}
+
+.services__text {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     margin-left: 14px;
-    margin-top: 0;
-    margin-bottom: 0;
     width: 580px;
 }
 
 
 /* DELIVERY
 ===================*/
-.delivery{
-    max-width: 1300px;
-    padding: 0;
+
+.delivery {
     margin-bottom: 90px;
 }
-.delivery__wrapper{
+
+.delivery__wrapper {
     display: flex;
-    
 }
-.delivery__logo{
+
+.delivery__logo {
     margin-right: 120px;
 }
 
@@ -192,9 +191,9 @@
     line-height: 46px;
     text-transform: uppercase;
 }
-.delivery__list{
-   padding-left: 0;
-    
+
+.delivery__list {
+    padding-left: 0;
 }
 
 .delivery__category {
@@ -205,8 +204,9 @@
     line-height: 32px;
     list-style: none;
 }
+
 .delivery__category:hover,
-.delivery__category:focus{
+.delivery__category:focus {
     font-style: italic;
     font-weight: bold;
     font-size: 26px;
@@ -227,10 +227,10 @@
 /* PARTNERS
 ===================*/
 
-.partners{
+.partners {
     margin-bottom: 116px;
-    
 }
+
 .partners__list {
     display: flex;
     justify-content: space-between;
@@ -241,20 +241,18 @@
 
 /* MAP
 ===================*/
-.map{
-    max-width: 1363px;
+
+.map {
     margin-bottom: 147px;
-  
-   
-}
-.map__wrapper{
-    display: flex;
-}
-.map__design{
-   
-    margin-right: 57px;
 }
 
+.map__wrapper {
+    display: flex;
+}
+
+.map__design {
+    margin-right: 57px;
+}
 
 .map__title {
     font-family: 'Montserrat', sans-serif;
@@ -265,7 +263,8 @@
     margin-bottom: 9px;
     text-transform: uppercase;
 }
-.map__design-wrap{
+
+.map__design-wrap {
     width: 543px;
     padding-left: 30px;
     padding-top: 30px;
@@ -281,7 +280,8 @@
     line-height: 32px;
     margin: 0;
 }
-.map__text{
+
+.map__text {
     width: 483px;
 }
 
@@ -292,11 +292,12 @@
     text-transform: uppercase;
     border: 0;
 }
-.map__contacts{
-   position: relative;
-    
+
+.map__contacts {
+    position: relative;
 }
-.map__contacts-wrap{
+
+.map__contacts-wrap {
     width: 543px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -304,7 +305,7 @@
     background: #E1F0F7;
 }
 
-.map__title-cont{
+.map__title-cont {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 38px;
@@ -314,22 +315,24 @@
     margin-left: 29px;
     text-transform: uppercase;
 }
-.map__text-cont{
-   width: 483px;
-   padding-top: 3px;
+
+.map__text-cont {
+    width: 483px;
+    padding-top: 3px;
     margin-left: 31px;
-    
 }
-.map__img{
+
+.map__img {
     position: absolute;
     top: 129px;
     left: 30px;
-   
 }
+
 
 /* POPUP
 ===================*/
-.popup__form{
+
+.popup__form {
     width: 680px;
     height: 542px;
     padding-top: 42px;
@@ -338,54 +341,58 @@
     background: #E5EAF8;
 }
 
-
-.popup__name{
+.popup__name {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
- .popup__form-name{
-     width: 100%;
-     height: 50px;
-     border: 1px solid rgba(0, 0, 0, 0.2);
-     box-sizing: border-box;
-    
+
+.popup__form-name {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
-.popup__form-wrap{
+
+.popup__form-wrap {
     display: flex;
     justify-content: space-between;
     margin-bottom: 43px;
 }
-.popup__phone{
-    display: flex;
-    flex-direction: column;
-   
-}
-.popup__email{
+
+.popup__phone {
     display: flex;
     flex-direction: column;
 }
-.popup__phone-email{
+
+.popup__email {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__phone-email {
     width: 290px;
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
-.popup__massage{
+
+.popup__massage {
     display: flex;
     flex-direction: column;
 }
-.popup__textarea{
+
+.popup__textarea {
     width: 100%;
     height: 150px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     margin-bottom: 22px;
 }
-.popup__text{
-   
-}
-.popup__button{
+
+.popup__text {}
+
+.popup__button {
     font-size: 16px;
     font-weight: bold;
     line-height: 22px;
@@ -397,12 +404,6 @@
     opacity: 1;
     border: 0;
 }
-
-
-
-
-
-
 
 
 

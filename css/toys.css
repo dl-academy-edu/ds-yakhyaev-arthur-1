@@ -1,6 +1,6 @@
 /*TOYS
 =====================*/
-.toys__title{
+.toys__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -9,46 +9,44 @@
     text-transform: uppercase;
 }
 
-.toys__select{
+.toys__select {
     margin-bottom: 50px;
 }
-.toys__arrow{
+
+.toys__arrow {
     margin: 0 20px;
 }
-    
-.toys__form{
+
+.toys__form {
     width: 100%;
     background: #e5eaf8;
     margin-bottom: 60px;
 }
-.toys__wrap{
+
+.toys__wrap {
     display: flex;
     justify-content: space-between;
-    padding-left: 110px;
-    padding-right: 195px;
-    padding-top: 42px;
-    padding-bottom: 42px;
-    width: 1095px;
 }
-.toys__wrapper{
-    
-}
-.toys__list{
+
+.toys__wrapper {}
+
+.toys__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
     padding-left: 0;
     list-style: none;
 }
-.toys__icon{
+
+.toys__icon {
     margin-bottom: 45px;
-    
 }
-.toys__link{
+
+.toys__link {
     text-decoration: none;
 }
-.toys__title-list{
+
+.toys__title-list {
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -56,18 +54,21 @@
     color: #1E0606;
     text-transform: uppercase;
 }
-.toys__price{
+
+.toys__price {
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
     color: #1E0606;
 }
-.toys__select-button{
+
+.toys__select-button {
     display: flex;
     justify-content: space-between;
 }
-.toys__list-button{
+
+.toys__list-button {
     display: flex;
     list-style: none;
 }
