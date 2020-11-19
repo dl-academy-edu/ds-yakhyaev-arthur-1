@@ -4,17 +4,14 @@
 .intro {
     margin-bottom: 90px;
 }
-
 .intro__wrapper {
     display: flex;
-    background: #EEE4DB;
+    background-color: #EEE4DB;
 }
-
 .intro__wrap {
     position: relative;
     margin-top: 17px;
 }
-
 .intro__number {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -24,27 +21,33 @@
     margin-left: 28px;
     color: #E4D9D0;
 }
-
+.intro__blog {
+    display: flex;
+}
 .intro__list {
     margin-bottom: 0;
+    padding-left: 31px;
     list-style: none;
 }
-
+.intro__btn-one {
+    margin-bottom: 11px;
+    width: 31px;
+    height: 3px;
+    background-color: #715F5B;
+    border: 0;
+}
 .intro__btn {
     display: flex;
     flex-direction: column;
     margin-bottom: 11px;
     width: 31px;
     height: 3px;
-    background: #D6CAC2;
+    background-color: #D6CAC2;
     border: 0;
 }
-
-.intro__btn:hover,
-.intro__btn:focus {
-    background: #715F5B;
+.intro__item {
+    margin-left: 71px;
 }
-
 .intro__title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -52,41 +55,31 @@
     font-size: 40px;
     line-height: 45px;
     width: 307px;
-    height: 88px;
-    margin-left: 133px;
-    margin-top: -66px;
+    margin-top: 20px;
     margin-bottom: 0;
     text-transform: uppercase;
 }
-
 .intro__logo {
     position: absolute;
     top: 153px;
 }
-
 .intro__subtitle {
     font-family: 'Crimson Text', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
-    margin-left: 133px;
 }
-
 .intro__button {
-    width: 160px;
-    height: 40px;
+    padding: 9px 22px;
     text-transform: uppercase;
-    margin-left: 133px;
-    margin-bottom: 89px;
-    background: black;
+    margin-bottom: 73px;
+    background-color: black;
     border: 0;
 }
-
 .intro__content-block {
-    background: #C29974;
+    background-color: #C29974;
 }
-
 .itro__content {
     font-style: normal;
     font-weight: bold;
@@ -106,7 +99,6 @@
 .services {
     margin-bottom: 90px;
 }
-
 .services__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -114,57 +106,84 @@
     line-height: 46px;
     text-transform: uppercase;
 }
-
 .services__list {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
     margin-bottom: 0;
 }
-
 .services__block {
     position: relative;
     list-style: none;
 }
-
-.services__img {}
-
-.services__sub {
+.services__sub-one {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     position: absolute;
     width: 129px;
-    top: 89px;
+    top: 78px;
     left: 70px;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
-
+.services__sub-two {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    position: absolute;
+    width: 155px;
+    top: 78px;
+    left: 62px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.services__sub-three {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    position: absolute;
+    top: 93px;
+    left: 104px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.services__sub-four {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    position: absolute;
+    top: 91px;
+    left: 45px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
 .services__select {
     display: flex;
     align-items: center;
+    margin-top: 33px;
 }
-
 .services__btn {
-    margin-top: 28px;
     margin-right: 6px;
+    border: 0;
+    padding: 0;
     background: rgba(112, 187, 220, 0.2);
     box-sizing: border-box;
-    border: 0;
 }
-
-.services__text-select {
-    margin-top: 23px;
-}
-
 .services__text {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    margin-left: 14px;
+    margin: 0;
+    padding-left: 14px;
     width: 580px;
 }
 
@@ -175,27 +194,27 @@
 .delivery {
     margin-bottom: 90px;
 }
-
 .delivery__wrapper {
     display: flex;
 }
-
 .delivery__logo {
     margin-right: 120px;
 }
-
+.delivery__content {
+    padding-right: 100px;
+}
 .delivery__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
-
 .delivery__list {
+    margin-bottom: 30px;
     padding-left: 0;
 }
-
 .delivery__category {
     font-family: 'Crimson Text', serif;
     font-style: italic;
@@ -203,23 +222,30 @@
     font-size: 26px;
     line-height: 32px;
     list-style: none;
+    margin-bottom: 22px;
 }
-
 .delivery__category:hover,
 .delivery__category:focus {
     font-style: italic;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
+    width: 326px;
+    padding-left: 60px;
+    padding-right: 180px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     background: rgba(112, 187, 220, 0.2);
     box-sizing: border-box;
 }
-
+.delivery__subtext {
+    margin-bottom: 26px;
+}
 .delivery__button {
     width: 149px;
     height: 40px;
     text-transform: uppercase;
-    background: black;
+    background-color: black;
     border: 0;
 }
 
@@ -230,7 +256,6 @@
 .partners {
     margin-bottom: 116px;
 }
-
 .partners__list {
     display: flex;
     justify-content: space-between;
@@ -245,15 +270,21 @@
 .map {
     margin-bottom: 147px;
 }
-
 .map__wrapper {
     display: flex;
+    position: relative;
 }
-
 .map__design {
     margin-right: 57px;
 }
-
+.map__design-wrap {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: #E1F0F7;
+    box-sizing: border-box;
+}
 .map__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -263,15 +294,9 @@
     margin-bottom: 9px;
     text-transform: uppercase;
 }
-
-.map__design-wrap {
-    width: 543px;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 35px;
-    background: #E1F0F7;
+.map__text {
+    padding-right: 15px;
 }
-
 .map__sub {
     font-family: 'Crimson Text', serif;
     font-style: italic;
@@ -280,108 +305,90 @@
     line-height: 32px;
     margin: 0;
 }
-
-.map__text {
-    width: 483px;
-}
-
 .map__button {
     width: 123px;
     height: 40px;
-    background: black;
+    background-color: black;
     text-transform: uppercase;
     border: 0;
 }
-
 .map__contacts {
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
-
 .map__contacts-wrap {
-    width: 543px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 80px;
-    background: #E1F0F7;
+    padding-top: 41px;
+    padding-bottom: 89px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-right: 30px;
+    margin-right: 24px;
+    background-color: #E1F0F7;
+    box-sizing: border-box;
 }
-
 .map__title-cont {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
-    margin-top: -34px;
+    margin-top: -65px;
+    padding: 0;
     margin-bottom: 20px;
-    margin-left: 29px;
     text-transform: uppercase;
 }
-
 .map__text-cont {
-    width: 483px;
-    padding-top: 3px;
-    margin-left: 31px;
+    padding-right: 12px;
+    margin: 0;
 }
-
 .map__img {
     position: absolute;
-    top: 129px;
-    left: 30px;
+    top: 121px;
+    left: 642px;
 }
 
 
 /* POPUP
 ===================*/
-
 .popup__form {
     width: 680px;
-    height: 542px;
-    padding-top: 42px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 42px 40px;
     background: #E5EAF8;
+    box-sizing: border-box;
 }
-
 .popup__name {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-
 .popup__form-name {
     width: 100%;
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
-
 .popup__form-wrap {
     display: flex;
     justify-content: space-between;
     margin-bottom: 43px;
 }
-
 .popup__phone {
     display: flex;
     flex-direction: column;
 }
-
 .popup__email {
     display: flex;
     flex-direction: column;
 }
-
 .popup__phone-email {
     width: 290px;
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
-
 .popup__massage {
     display: flex;
     flex-direction: column;
 }
-
 .popup__textarea {
     width: 100%;
     height: 150px;
@@ -389,9 +396,6 @@
     box-sizing: border-box;
     margin-bottom: 22px;
 }
-
-.popup__text {}
-
 .popup__button {
     font-size: 16px;
     font-weight: bold;
@@ -404,11 +408,6 @@
     opacity: 1;
     border: 0;
 }
-
-
-
-
-
 
 
 

@@ -1,5 +1,8 @@
 /*TOYS
 =====================*/
+.toys{
+    margin-bottom: 60px;
+}
 .toys__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -19,6 +22,8 @@
 
 .toys__form {
     width: 100%;
+    padding: 0;
+    margin: 0;
     background: #e5eaf8;
     margin-bottom: 60px;
 }
@@ -67,8 +72,16 @@
     display: flex;
     justify-content: space-between;
 }
+.toys__btn{
+    margin-top: 15px;
+    border: 0;
+}
 
 .toys__list-button {
     display: flex;
     list-style: none;
 }
+.toys__number{
+    margin-right: 64px;
+}
+

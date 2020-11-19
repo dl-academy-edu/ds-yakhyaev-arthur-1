@@ -58,22 +58,21 @@ body {
 
 .header__nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header__nav-list {
     display: flex;
-    margin-right: 677px;
     list-style: none;
 }
 .header__contact{
     display: flex;
-   
 }
 
 .header__search {
     margin-right: 24px;
-   
 }
 
 .header__button {
