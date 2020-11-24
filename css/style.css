@@ -30,6 +30,7 @@
     list-style: none;
 }
 .intro__btn-one {
+    display: block;
     margin-bottom: 11px;
     width: 31px;
     height: 3px;
@@ -45,8 +46,13 @@
     background-color: #D6CAC2;
     border: 0;
 }
+
+.intro__btn:hover{
+    background-color: #725F5B;
+}
 .intro__item {
     margin-left: 71px;
+    margin-bottom: 73px;
 }
 .intro__title {
     font-family: 'Montserrat', sans-serif;
@@ -73,9 +79,28 @@
 .intro__button {
     padding: 9px 22px;
     text-transform: uppercase;
-    margin-bottom: 73px;
+    
     background-color: black;
     border: 0;
+}
+.intro__button:hover{
+    background-color: #C29974;
+}
+.intro__button:active{
+    background-color: #CFAF91;
+}
+.intro__button-link{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+.intro__button-link:hover{
+    background-color: #C29974;
+}
+.intro__button-link:active{
+    background-color: #CFAF91;
 }
 .intro__content-block {
     background-color: #C29974;
@@ -323,7 +348,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-right: 30px;
-    margin-right: 24px;
+    margin-right: 25px;
     background-color: #E1F0F7;
     box-sizing: border-box;
 }

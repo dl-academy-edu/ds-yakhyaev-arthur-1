@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/toys.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
@@ -14,7 +15,7 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
+                <a class="header__logo" href="index.html"><img class="header__img" src="./images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-link"><a class="link-nav" href="blog.html">Blog</a></li>
@@ -35,65 +36,93 @@
     <section class="toys">
         <div class="container">
             <h1 class="toys__title">Toy for kids</h1>
-            <div class="toys__select"> <a class="link" href="index.html">Home</a> <img class="toys__arrow " src="./images/Vector%20(right).png" alt="Vector"><a class="link" href="catalog.html">Catalog</a> <img class="toys__arrow" src="./images/Vector%20(right).png" alt="Vector"> <a class="link" href="#">Toys</a> </div>
-            
+            <div class="toys__select"> <a class="link" href="index.html">Home</a> <img class="toys__arrow " src="./images/Vector%20(right).png" alt="Vector"><a class="link" href="catalog.html">Catalog</a> <img class="toys__arrow" src="./images/Vector%20(right).png" alt="Vector"> <a class="toys-link" href="#">Toys</a> </div>
+         </div>
+          
+           <div class="toys__wrapper">
             <form class="toys__form" action="" method="post">
                 <div class="toys__wrap">
                     <div class="toys__cost">
                         <h3>Cost</h3>
-                        <div>
-                            <label for="cost"></label>
-                            <input type="range" id=cost name="cost" min="0" max="500"> </div>
+                        <div class="toys__item">
+                            <div class="toys__border"></div>
+                            <div class="toys__img"></div>
+                            <div class="toys__border-two"></div>
+                      </div>
+                      <div class="toys__numeral">
+                          <span class="toys__numer">0</span>
+                          <span class="toys__numer-two">500</span>
+                      </div>
                     </div>
+                    <fieldset class="toys__fieldset">
                     <div class="toys__color">
                         <h3>Color</h3>
-                        <div>
-                            <input type="Checkbox" id="black" value="black" name="Color" checked>
-                            <label for="black">Black</label>
+                        <div class="toys__items">
+                            <input class="toys__input" type="Checkbox" id="black" value="black" name="Color"  checked>
+                            <span class="toys__checkbox"></span>
+                            <label class="toys__colors" for="black">Black</label>
                         </div>
-                        <div>
-                            <input type="Checkbox" id="blue" value="blue" name="Color">
-                            <label for="blue">Blue</label>
+                        <div class="toys__items">
+                            <input class="toys__input" type="Checkbox" id="blue" value="blue" name="Color">
+                            <span class="toys__checkbox"></span>
+                            <label class="toys__colors" for="blue">Blue</label>
                         </div>
-                        <div>
-                            <input type="Checkbox" id="green" value="green" name="Color">
-                            <label for="green">Green</label>
+                        <div class="toys__items">
+                            <input class="toys__input" type="Checkbox" id="green" value="green" name="Color">
+                            <span class="toys__checkbox"></span>
+                            <label class="toys__colors" for="green">Green</label>
                         </div>
-                        <div>
-                            <input type="Checkbox" id="white" value="white" name="Color">
-                            <label for="white">White</label>
+                        <div class="toys__items">
+                            <input class="toys__input" type="Checkbox" id="white" value="white" name="Color">
+                            <span class="toys__checkbox"></span>
+                            <label class="toys__colors" for="white">White</label>
                         </div>
                     </div>
+                    </fieldset>
+                    <fieldset class="toys__fieldset">
                     <div class="toys__delivery">
                         <h3>Delivery</h3>
-                        <div>
-                            <input type="radio" id="Free shipping" value="Free shipping" name="shipping">
-                            <label for="Free shipping">Free shipping</label>
+                        <div class="toys__shipping-items">
+                            <input class="toys__delivery-input" type="radio" id="Free shipping" value="Free shipping" name="shipping">
+                            <span class="toys__shipping"></span>
+                            <label class="toys__color-item"for="Free shipping">Free shipping</label>
                         </div>
-                        <div>
-                            <input type="radio" id="Fast shipping" value="Fast shipping" name="shipping" checked>
-                            <label for="Fast shipping">Fast shipping</label>
+                        <div class="toys__shipping-items">
+                            <input class="toys__delivery-input" type="radio" id="Fast shipping" value="Fast shipping" name="shipping" checked>
+                            <span class="toys__shipping"></span>
+                            <label class="toys__color-item" for="Fast shipping">Fast shipping</label>
                         </div>
                     </div>
+                    </fieldset>
+                    
+                    <fieldset class="toys__fieldset">
                     <div class="toys__amount">
                         <h3>Amount</h3>
+                        <div class="toys__amount-item">
                         <div>
-                            <input type="radio" id="0-5" value="0-5" name="Amount" checked>
-                            <label for="0-5">0-5</label>
+                            <input class="toys__amount-input" type="Checkbox" id="0-5" value="0-5" name="numer"  checked>
+                            <label class="toys__amount-one">0-5</label>
                         </div>
-                        <div>
-                            <input type="radio" id="10-20" value="10-20" name="Amount">
-                            <label for="10-20">10-20</label>
+                            <div>
+                            <input class="toys__amount-input" type="Checkbox" id="10-20" value="10-20" name="numer">
+                            <label class="toys__amount-number">10-20</label>
                         </div>
-                        <div>
-                            <input type="radio" id="20-50" value="20-50" name="Amount">
-                            <label for="20-50">20-50</label>
+                          <div>
+                           <input class="toys__amount-input" type="Checkbox" id="20-50" value="20-50" name="numer">
+                           <label class="toys__amount-number">20-50</label>
+                        </div>
                         </div>
                     </div>
-                    <button class="toys__button" type="submit"><a href="#">Apply</a></button>
+                </fieldset>
+                  
+                   <div class="toys__form-btn">
+                    <button class="toys__button" type="submit"><a class="button" href="#">Apply</a></button>
+                    </div>
+                
                 </div>
             </form>
-            <div class="toys__wrapper">
+           </div>
+            <div class="toys__catalog">
                 <ul class="toys__list">
                     <li class="toys__icon">
                         <a class="toys__link" href="#"><img src="./images/toys/toys-1.png" alt="Toys1" width="380" height="385">
@@ -133,53 +162,53 @@
                     </li>
                 </ul>
                 <div class="toys__select-button">
-                    <button  class="toys__btn">
+                    <a class="toys__btn" href="#">
                         <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" /> </svg>
-                    </button>
-                    <ul class="toys__list-button">
-                        <li class="toys__number">1</li>
-                        <li class="toys__number">2</li>
-                        <li class="toys__number">3</li>
-                        <li class="toys__number">4</li>
-                    </ul>
-                    <button  class="toys__btn">
+                            </a>
+                <ul class="toys__list-button">
+                    <a class="toys__number" href="#">1</a>
+                    <a class="toys__number" href="#">2</a> 
+                    <a class="toys__number" href="#">3</a>
+                    <a class="toys__number" href="#">4</a>
+                </ul>
+                    <a class="toys__btn" href="#">
                         <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" /> </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
-        </div>
+      
     </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-               <div class="footer__navigation">
+     <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__navigation">
                 <h4 class="footer__title">Navigation</h4>
                 <div class="footer__border"></div>
                 <ul class="footer__list">
-                    <li class="footer__link">About Us</li>
-                    <li class="footer__link">Blog</li>
-                    <li class="footer__link">Design Services</li>
-                    <li class="footer__link">Featured On</li>
-                    <li class="footer__link">2018 Holiday Catalog</li>
-                    <li class="footer__link">Shop By Designer</li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">About Us</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Blog</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Design Services</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Featured On</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">2018 Holiday Catalog</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Shop By Designer</a></li>
                 </ul>
-                </div>
-                <div class="footer__customer">
+            </div>
+            <div class="footer__customer">
                 <h4 class="footer__title">Customer Information</h4>
                 <div class="footer__border"></div>
                 <ul class="footer__list">
-                    <li class="footer__link">Contact Us</li>
-                    <li class="footer__link">Sale Exclusions</li>
-                    <li class="footer__link">Shipping & Returns</li>
-                    <li class="footer__link">Terms & Conditions</li>
-                    <li class="footer__link">Privacy Policy></li>
-                    <li class="footer__link">Search</li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Contact Us</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Sale Exclusions</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Shipping & Returns</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Terms & Conditions</a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Privacy Policy></a></li>
+                    <li class="footer__link"><a class="footer__list-link" href="#">Search</a></li>
                 </ul>
-                </div>
-                <div class="footer__connect">
+            </div>
+            <div class="footer__connect">
                 <h4 class="footer__title">Connect</h4>
                 <div class="footer__border"></div>
                 <form calss="footer__form" action="https://echo.htmlacademy.ru" method="post">
@@ -187,47 +216,75 @@
                     <button class="footer__button"><a class="button" href="https://echo.htmlacademy.ru">Join</a></button>
                 </form>
                 <ul class="footer__icon">
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/facebook.svg" alt="face" width="30" height="30"> </li>
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/pinterest.svg" alt="prin" width="30" height="30"> </li>
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/twitter.svg" alt="twit" width="30" height="30"> </li>
-                    <li class="footer__ic"> <img class="footer__img" src="./images/svg/instagram.svg" alt="inst" width="30" height="30"> </li>
+                    <li class="footer__ic">
+                        <a class="footer__link-icon" href="#" aria-label="follow us facebook">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.55271 3.36723H6.29671C6.03071 3.36723 5.73372 3.71723 5.73372 4.18523V5.81423H8.55271V8.13523H5.73372V15.1052H3.07071V8.13523H0.657715V5.81423H3.07071V4.44723C3.07071 2.48823 4.43171 0.894226 6.29671 0.894226H8.55271V3.36723Z" fill="white" /> </svg>
+                        </a>
+                    </li>
+                    <li class="footer__ic">
+                        <a class="footer__link-icon" href="#" aria-label="follow us facebook">
+                            <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1006 3.28912C13.1056 3.41612 13.1096 3.54312 13.1096 3.67212C13.1096 7.57612 10.1366 12.0781 4.70258 12.0781C3.03458 12.0781 1.48058 11.5881 0.173584 10.7501C0.406584 10.7771 0.641584 10.7911 0.879584 10.7911C2.26358 10.7911 3.53758 10.3181 4.54858 9.52512C3.25558 9.50212 2.16558 8.64812 1.78758 7.47512C1.96858 7.51012 2.15458 7.52712 2.34458 7.52712C2.61358 7.52712 2.87458 7.49212 3.12258 7.42412C1.77158 7.15212 0.751584 5.95912 0.751584 4.52712V4.49012C1.15058 4.71112 1.60758 4.84412 2.09158 4.85912C1.29858 4.33012 0.777584 3.42612 0.777584 2.40012C0.777584 1.85912 0.922584 1.35212 1.17658 0.916122C2.63258 2.70312 4.81058 3.87912 7.26558 4.00212C7.21558 3.78512 7.19058 3.56012 7.19058 3.32812C7.19058 1.69712 8.51258 0.375122 10.1446 0.375122C10.9936 0.375122 11.7616 0.732122 12.2996 1.30712C12.9736 1.17612 13.6056 0.930122 14.1766 0.590122C13.9556 1.28112 13.4886 1.85912 12.8766 2.22512C13.4746 2.15412 14.0446 1.99612 14.5756 1.76012C14.1776 2.35212 13.6776 2.87312 13.1006 3.28912Z" fill="white" /> </svg>
+                        </a>
+                    </li>
+                    <li class="footer__ic">
+                        <a class="footer__link-icon" href="#" aria-label="follow us facebook">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00047 0C3.58252 0 0 3.58158 0 8.00047C0 11.2754 1.97001 14.0902 4.78956 15.3273C4.76698 14.7694 4.78579 14.0977 4.92785 13.49C5.08214 12.8408 5.95708 9.1313 5.95708 9.1313C5.95708 9.1313 5.70212 8.62045 5.70212 7.865C5.70212 6.6796 6.38984 5.79432 7.24502 5.79432C7.97225 5.79432 8.3241 6.34092 8.3241 6.99571C8.3241 7.7267 7.85747 8.82084 7.61757 9.83407C7.41718 10.6836 8.04281 11.3751 8.88011 11.3751C10.3957 11.3751 11.4165 9.42859 11.4165 7.12177C11.4165 5.36908 10.2358 4.05668 8.08796 4.05668C5.66167 4.05668 4.14982 5.86582 4.14982 7.88663C4.14982 8.5847 4.35491 9.07579 4.67666 9.45587C4.82531 9.6318 4.84506 9.70142 4.79144 9.90275C4.75381 10.0486 4.66537 10.4042 4.62868 10.5444C4.57506 10.7466 4.41136 10.82 4.22885 10.7448C3.11025 10.2885 2.58999 9.0645 2.58999 7.68813C2.58999 5.41612 4.50638 2.68972 8.30717 2.68972C11.3619 2.68972 13.3724 4.90151 13.3724 7.27324C13.3724 10.4117 11.6282 12.7562 9.05509 12.7562C8.19239 12.7562 7.37955 12.2895 7.10108 11.7599C7.10108 11.7599 6.63633 13.6029 6.53848 13.9585C6.36914 14.5747 6.03704 15.1919 5.73317 15.6717C6.45287 15.8843 7.21303 16 8.00047 16C12.4184 16 16 12.4184 16 8.00047C16 3.58158 12.4184 0 8.00047 0Z" fill="white" /> </svg>
+                        </a>
+                    </li>
+                    <li class="footer__ic">
+                        <a class="footer__link-icon" href="#" aria-label="follow us facebook">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00003 0C5.82733 0 5.5549 0.0092 4.70163 0.0481333C3.8501 0.0869667 3.26857 0.222233 2.7597 0.42C2.23363 0.624433 1.7875 0.897967 1.3427 1.3427C0.897967 1.7875 0.624433 2.23363 0.42 2.7597C0.222233 3.26857 0.0869667 3.8501 0.0481333 4.7016C0.0092 5.5549 0 5.82733 0 8C0 10.1727 0.0092 10.4451 0.0481333 11.2984C0.0869667 12.1499 0.222233 12.7314 0.42 13.2403C0.624433 13.7664 0.897967 14.2125 1.3427 14.6573C1.7875 15.102 2.23363 15.3756 2.7597 15.58C3.26857 15.7778 3.8501 15.913 4.70163 15.9519C5.5549 15.9908 5.82733 16 8.00003 16C10.1727 16 10.4451 15.9908 11.2984 15.9519C12.1499 15.913 12.7314 15.7778 13.2403 15.58C13.7664 15.3756 14.2125 15.102 14.6573 14.6573C15.102 14.2125 15.3756 13.7664 15.58 13.2403C15.7778 12.7314 15.913 12.1499 15.9519 11.2984C15.9908 10.4451 16 10.1727 16 8C16 5.82733 15.9908 5.5549 15.9519 4.7016C15.913 3.8501 15.7778 3.26857 15.58 2.7597C15.3756 2.23363 15.102 1.7875 14.6573 1.3427C14.2125 0.897967 13.7664 0.624433 13.2403 0.42C12.7314 0.222233 12.1499 0.0869667 11.2984 0.0481333C10.4451 0.0092 10.1727 0 8.00003 0ZM8.00003 1.44143C10.1361 1.44143 10.3891 1.4496 11.2327 1.4881C12.0127 1.52367 12.4363 1.65397 12.7182 1.76353C13.0916 1.90867 13.3581 2.08203 13.638 2.362C13.918 2.6419 14.0913 2.9084 14.2365 3.28183C14.346 3.56373 14.4763 3.98733 14.5119 4.7673C14.5504 5.61087 14.5586 5.8639 14.5586 8C14.5586 10.1361 14.5504 10.3891 14.5119 11.2327C14.4763 12.0127 14.346 12.4363 14.2365 12.7182C14.0913 13.0916 13.918 13.3581 13.638 13.638C13.3581 13.918 13.0916 14.0913 12.7182 14.2365C12.4363 14.346 12.0127 14.4763 11.2327 14.5119C10.3892 14.5504 10.1363 14.5586 8.00003 14.5586C5.86373 14.5586 5.61077 14.5504 4.7673 14.5119C3.98733 14.4763 3.56373 14.346 3.28183 14.2365C2.9084 14.0913 2.64193 13.918 2.36197 13.638C2.08207 13.3581 1.90867 13.0916 1.76353 12.7182C1.65397 12.4363 1.52367 12.0127 1.4881 11.2327C1.4496 10.3891 1.44143 10.1361 1.44143 8C1.44143 5.8639 1.4496 5.61087 1.4881 4.7673C1.52367 3.98733 1.65397 3.56373 1.76353 3.28183C1.90867 2.9084 2.08203 2.6419 2.36197 2.362C2.64193 2.08203 2.9084 1.90867 3.28183 1.76353C3.56373 1.65397 3.98733 1.52367 4.7673 1.4881C5.61087 1.4496 5.8639 1.44143 8.00003 1.44143ZM3.8919 8C3.8919 5.73113 5.73113 3.8919 8.00003 3.8919C10.2689 3.8919 12.1081 5.73113 12.1081 8C12.1081 10.2689 10.2689 12.1081 8.00003 12.1081C5.73113 12.1081 3.8919 10.2689 3.8919 8ZM8.00003 10.6667C6.52723 10.6667 5.33333 9.47277 5.33333 8C5.33333 6.52723 6.52723 5.33333 8.00003 5.33333C9.47277 5.33333 10.6667 6.52723 10.6667 8C10.6667 9.47277 9.47277 10.6667 8.00003 10.6667ZM12.2704 4.68957C12.8006 4.68957 13.2304 4.2598 13.2304 3.7296C13.2304 3.1994 12.8006 2.76957 12.2704 2.76957C11.7402 2.76957 11.3104 3.1994 11.3104 3.7296C11.3104 4.2598 11.7402 4.68957 12.2704 4.68957Z" fill="white" /> </svg>
+                        </a>
+                    </li>
                 </ul>
-                </div>
-               </div>
-               
-               <div class="footer__border-bottom"></div>
-                <div class="footer__bottom">
-                 <div class="footer__bottom-rating">
-                       <p class="footer__bottom-title">Company Rating </p>
-                        <ul class="footer__bottom-list">
-                           
-                            <li class="footer__star">
-                                
-                                </li>
-                                
-                                <li class="footer__star">
-                                    
-                                </li>
-                                
-                                <li class="footer__star">
-                                    
-                                </li>
-                                
-                                <li class="footer__star">
-                                    
-                                </li>
-                                
-                                <li class="footer__star">
-                                    
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="footer__bottom-title">Copyright © 2018 Dlk • Design Life Kids</p>
-                    <p class="footer__title-web">Web Design — Direct Line Development</p>
-                
-             </div>
+            </div>
         </div>
-    </footer>
+        <div class="footer__border-bottom"></div>
+   <div class="footer__bottom">
+    <div class="footer__bottom-rating">
+        <p class="footer__bottom-title"><a class="footer__title-link" href="#">Company Rating</a></p>
+        <ul class="footer__bottom-list">
+            <li class="footer__star">
+                <a class="footer__star-link" href="#" aria-label="star">
+                    <svg width="17" height="17" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star__svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white" /> </svg>
+                </a>
+            </li>
+            <li class="footer__star">
+                <a class="footer__star-link" href="#" aria-label="star">
+                    <svg width="17" height="17" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star__svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white" /> </svg>
+                </a>
+            </li>
+            <li class="footer__star">
+                <a class="footer__star-link" href="#" aria-label="star">
+                    <svg width="17" height="17" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star__svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white" /> </svg>
+                </a>
+            </li>
+            <li class="footer__star">
+                <a class="footer__star-link" href="#" aria-label="star">
+                    <svg width="17" height="17" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star__svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white" /> </svg>
+                </a>
+            </li>
+            <li class="footer__star">
+                <a class="footer__star-link" href="#" aria-label="star">
+                    <svg width="17" height="17" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star__svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white" /> </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p class="footer__bottom-subtitle">Copyright © 2018 Dlk • Design Life Kids</p>
+    <p class="footer__title-web">Web Design — Direct Line Development</p>
+</div>
+</div>
+</footer>
 </body>
 
 </html>
