@@ -10,7 +10,8 @@ body {
     padding-left: 110px;
     padding-right: 110px;
     margin: 0 auto;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .link-nav {
     font-size: 14px;
@@ -53,8 +54,9 @@ body {
     margin-top: 50px;
     margin-bottom: 60px;
 }
-
 .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .header__logo:hover{
@@ -64,18 +66,28 @@ body {
     opacity: 0.2;
 }
 .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
 }
 .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     margin-top: 8px;
     margin-left: 2px;
 }
 .header__contact{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 2px;
     margin-top: -2px;
@@ -111,12 +123,16 @@ body {
 
 .footer {
     width: 100%;
-    background: #434343;
+    background-color: #434343;
     padding: 100px 0;
 }
 .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .footer__title {
     font-weight: normal;
@@ -127,7 +143,8 @@ body {
 }
 .footer__border{
     margin-bottom: 25px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 380px;
     border: 1px solid #666666;
 }
@@ -149,7 +166,8 @@ body {
     margin-top: 1px;
     border: 0;
     background-color:#666;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .footer__email:hover{
     border: 1px solid #FFFDFD;
@@ -163,11 +181,16 @@ body {
     margin-left: -4px;
     text-transform: uppercase;
     border: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .footer__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 0;
     padding-top: 25px;
     margin: 0;
@@ -178,18 +201,26 @@ body {
 }
 
 .footer__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin-top: -3px;
 }
 .footer__link-icon{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 29px;
     height: 29px;
     border: 1px solid #666666;
     border-radius:50%;
-    background: #666666;
+    background-color: #666666;
     margin: 0;
 }
 .footer__link-icon:hover{
@@ -211,12 +242,17 @@ opacity: 0.2;
 .footer__border-bottom{
     margin-bottom: 26px;
     width: 1180px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 1px solid #666666;
 }
 .footer__bottom-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .footer__bottom-title{
     margin-top: 0;
@@ -230,8 +266,12 @@ opacity: 0.2;
     color: #C29974;
 }
 .footer__bottom-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 0;
     margin-bottom: 14px;
     padding-left: 23px;
@@ -280,6 +320,7 @@ opacity: 0.2;
     color: #AAAAAA;
 }
 .footer__title-web:hover{
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
     color:#fff;
 }

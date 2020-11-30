@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*TOYS
 =====================*/
 .toys{
@@ -44,19 +51,26 @@
 
 }
 .toys__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 1095px;
     margin: 0 auto;
     padding-top: 42px;
     padding-bottom: 8px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .toys__title-cost{
     font-weight: bold;
     margin-bottom: 25px;
 }
 .toys__item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 16px;
 }
@@ -80,6 +94,8 @@
     background-color: #73757C;
 }
 .toys__numeral{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
 }
@@ -114,7 +130,8 @@
     width: 19px;
     height: 19px;
     border: 2px solid #C29974;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 3px;
     background-color: #e5eaf8;
 }  
@@ -133,7 +150,8 @@
     opacity: 1;
 }
 .toys__colors:hover{
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
 }
 .toys__color-item{
    position: relative;
@@ -147,7 +165,8 @@
     width: 20px;
     height: 20px;
     border: 2px solid #C29974;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 10px;
     background-color: #e5eaf8;
     
@@ -160,7 +179,8 @@
     width: 12px;
     height: 12px;
     border: 2px solid #C29974;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 10px;
     background-color: #C29974;
     opacity: 0;
@@ -170,7 +190,8 @@
     opacity:1;
 }
 .toys__color-item:hover{
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
 }
 .toys__title-delivery{
     font-weight: bold;
@@ -193,12 +214,20 @@
     margin-top: -7px;
 }
 .toys__amount-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .toys__amount-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 80px;
     height: 35px;
     background-color: #fff;
@@ -231,17 +260,29 @@
 }
 .toys__amount-input:checked +
 .toys__amount-number{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
     background-color: #F3D0DB;
 }
 .toys__amount-number:hover{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
     background-color: #EDDEEB;
@@ -275,14 +316,22 @@
     margin:0 auto;
 }
 .toys__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding:0;
     list-style: none;
 }
 .toys__list-two{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding:0;
     margin-top: -32px;
     margin-bottom: 5px;
@@ -294,9 +343,15 @@
     
 }
 .toys__learn-more{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -313,7 +368,7 @@
     background: #E5EAF8;
     opacity: 0;
 }
-.toys__learn-more:hover{
+.toys__learn-more:hover {
     opacity: 0.9;
 }
 .toys__learn-more:active{
@@ -323,6 +378,7 @@
     display: block;
     text-align: center;
     height: 100%;
+
     text-decoration: none;
 }
 .toys__title-list {
@@ -365,8 +421,12 @@
     
 }
 .toys__select-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .toys__number{
     font-family: 'Montserrat', sans-serif;
@@ -389,6 +449,8 @@
     background-color: #fff;
 }
 .toys__list-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     margin-bottom: 0;
@@ -398,7 +460,6 @@
 .toys__catalog-img{
     margin-bottom: 30px;
 }
-
 
 
 
