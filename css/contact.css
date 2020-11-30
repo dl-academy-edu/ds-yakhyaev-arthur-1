@@ -9,12 +9,14 @@
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 15px;
+    margin-top: -5px;
     text-transform: uppercase;
 }
 .contact__select {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+    margin-left: 2px;
 }
 .contact-link{
     font-family: 'Crimson Text', serif;
@@ -49,12 +51,18 @@
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 3px;
-
 }
 .contact__line-name {
     width: 100%px;
     height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.contact__line-name:hover{
+    border: 2px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
 .contact__line-item {
@@ -64,6 +72,7 @@
 .contact__phone {
     display: flex;
     flex-flow: column wrap;
+    padding-top: 1px;
 }
 .contact__item-phone{
     font-weight: normal;
@@ -75,13 +84,21 @@
 .contact__line-phone {
     width: 290px;
     height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     margin-right: 20px;
+}
+.contact__line-phone:hover{
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 .contact__email {
     display: flex;
     flex-flow: column wrap;
+    padding-top: 1px;
 }
 .contact__item-email{
     font-weight: normal;
@@ -93,24 +110,39 @@
 .contact__line-email {
     width: 290px;
     height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.contact__line-email:hover{
+    border:3px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
 .contact__message {
     display: flex;
     flex-flow: column wrap;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 .contact__item-message{
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
+    margin-top: -23px;
 }
 .contact__line-text {
     width: 600px;
     height: 150px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.contact__line-text:hover{
+    border: 3px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
 .contact__consent {
@@ -120,7 +152,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    padding-left: 30px;
+    padding-left: 36px;
 }
 .contact__button {
     width: 106px;
@@ -140,6 +172,7 @@
 }
 .contact__text{
     margin-top: 0;
+    margin-bottom: 20px;
 }
 .contact__subtext {
     font-family: 'Montserrat', sans-serif;
@@ -147,6 +180,7 @@
     font-size: 26px;
     line-height: 34px;
     color: #C29974;
+    margin-top: 0;
     text-transform: uppercase;
 }
 .contact__checkbox-input{
@@ -160,7 +194,6 @@
     width: 19px;
     height: 19px;
     background-image: url(../images/svg/contact-off.svg);
-    
 }
 .contact__checkbox-input:checked + .contact__checkbox{
     width: 19px;
