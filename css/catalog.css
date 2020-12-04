@@ -1,9 +1,5 @@
-
 /*CATALOG
 ==================*/
-.catalog{
-    
-}
 .catalog__title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -24,8 +20,12 @@
     text-transform: uppercase;
 }
 .catalog__select {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: -12px;
     margin-bottom: 50px;
     padding-left:1px;
@@ -44,9 +44,12 @@
     margin: 0 20px;
 }
 .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap:wrap;
-    margin-bottom: 23px;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    margin-bottom: 56px;
     padding: 0;
     list-style: none;
 }
@@ -54,25 +57,22 @@
     display: block;
     text-align: center;
     height: 100%;
+    margin-top: -1px;
     color:#fff;
     text-decoration: none;
-    text-decoration-line: underline;
-}
-.catalog__list-two{
-    display: flex;
-    flex-wrap:wrap;
-    margin-left:200px;
-    margin-top: -4px;
-    margin-bottom: 55px;
-    padding: 0;
-    list-style: none;
 }
 .catalog__block{
     position: relative;
     margin-right: 20px;
 }
+.catalog__block:first-child{
+    margin-bottom: 20px;
+}
 .catalog__block:last-child{
     margin-right: 0;
+}
+.catalog__block:nth-child(4){
+    margin-left: 200px;
 }
 .catalog__sub-one{
     font-family: 'Montserrat', sans-serif;
