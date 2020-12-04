@@ -75,9 +75,15 @@
     border: 2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    outline: 0;
 }
 .contact__line-name:hover{
     border: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.contact__line-name:active{
+    border: 2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -114,9 +120,15 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-right: 20px;
+    outline: 0;
 }
 .contact__line-phone:hover{
-    border: 3px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.contact__line-phone:active{
+    border: 2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -146,9 +158,15 @@
     border: 2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+     outline: 0;
 }
 .contact__line-email:hover{
-    border:3px solid rgba(0, 0, 0, 0.2);
+    border:2px solid rgba(0, 0, 0, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.contact__line-email:active{
+    border:2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -178,21 +196,61 @@
     border: 2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    outline: 0;
 }
 .contact__line-text:hover{
-    border: 3px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.contact__line-text:active{
+    border: 2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 .contact__consent {
     margin-bottom: 17px;
 }
+.contact__checkbox-input{
+    display: none;
+}
+
 .contact__consent-text{
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     padding-left: 36px;
+    position: relative;
 }
+.contact__consent-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #e5eaf8;
+}
+.contact__consent-text::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background-image: url("../images/svg/contact-on.svg");
+    background-color: #fff;
+    opacity: 0;
+}
+.contact__checkbox-input:checked + .contact__consent-text::after{
+    opacity: 1;
+}
+
+
 .contact__button {
     width: 106px;
     height: 40px;
@@ -204,6 +262,13 @@
     background-color: #000;
     color: #FFF;
     border: 0;
+    cursor: pointer;
+}
+.contact__button:hover{
+    background-color: #C29974;
+}
+.contact__button:active{
+    background-color: #CFAF91;
 }
 .contact__descript{
     width: 380px;
@@ -222,23 +287,7 @@
     margin-top: 0;
     text-transform: uppercase;
 }
-.contact__checkbox-input{
-    position: absolute;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.contact__checkbox{
-    position: absolute;
-    width: 19px;
-    height: 19px;
-    background-image: url(../images/svg/contact-off.svg);
-}
-.contact__checkbox-input:checked + .contact__checkbox{
-    width: 19px;
-    height: 19px;
-    background-image: url(../images/svg/contact-on.svg);
-}
+
 
 
 
